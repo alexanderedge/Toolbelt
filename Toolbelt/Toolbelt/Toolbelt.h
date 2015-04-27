@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Alexander Edge. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Toolbelt.
 FOUNDATION_EXPORT double ToolbeltVersionNumber;
