@@ -1,15 +1,15 @@
 //
-//  ToolbeltTests.swift
-//  ToolbeltTests
+//  Toolbelt_iOSTests.swift
+//  Toolbelt-iOSTests
 //
 //  Created by Alexander G Edge on 27/04/2015.
 //  Copyright (c) 2015 Alexander Edge. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import XCTest
 
-class ToolbeltTests: XCTestCase {
+class Toolbelt_iOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
