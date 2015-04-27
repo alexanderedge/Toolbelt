@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Alexander Edge. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import XCTest
 
 class ToolbeltTests: XCTestCase {

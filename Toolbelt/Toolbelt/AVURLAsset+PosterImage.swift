@@ -27,7 +27,13 @@ extension AVURLAsset {
         gen.appliesPreferredTrackTransform = true
         gen.requestedTimeToleranceBefore = kCMTimeZero
         gen.requestedTimeToleranceAfter = kCMTimeZero
-        return UIImage(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
+        
+        #if os(OSX)
+            return Image(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err), size: NSZeroSize)
+        #else
+            return Image(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
+        #endif
+        
     }
     
 }
