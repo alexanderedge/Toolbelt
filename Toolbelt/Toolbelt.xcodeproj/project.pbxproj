@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0D2FB61AF151F600E5BB45 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
+		DE0D2FB71AF151F700E5BB45 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
 		DEA28F2E1AEEB16E004DCD64 /* Toolbelt-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA28F2D1AEEB16E004DCD64 /* Toolbelt-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEA28F341AEEB16E004DCD64 /* Toolbelt_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA28F291AEEB16E004DCD64 /* Toolbelt_iOS.framework */; };
 		DEA28F3B1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA28F3A1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift */; };
@@ -21,10 +23,6 @@
 		DEA28F671AEEB199004DCD64 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colours.swift */; };
 		DEA28F681AEEB19A004DCD64 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colours.swift */; };
 		DEA28F691AEEB19A004DCD64 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colours.swift */; };
-		DEA28F6A1AEEB1A0004DCD64 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C71AEE9E6F00AC95FE /* Aliases.swift */; };
-		DEA28F6B1AEEB1A0004DCD64 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C71AEE9E6F00AC95FE /* Aliases.swift */; };
-		DEA28F6C1AEEB1A1004DCD64 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C71AEE9E6F00AC95FE /* Aliases.swift */; };
-		DEA28F6D1AEEB1A1004DCD64 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C71AEE9E6F00AC95FE /* Aliases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +47,6 @@
 		DE3540A91AEE9C5700AC95FE /* Toolbelt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toolbelt.h; sourceTree = "<group>"; };
 		DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVURLAsset+PosterImage.swift"; sourceTree = "<group>"; };
 		DE3540C41AEE9DA300AC95FE /* Colours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
-		DE3540C71AEE9E6F00AC95FE /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
 		DE3540CA1AEE9EA100AC95FE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE3540CB1AEE9EA100AC95FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DEA28F291AEEB16E004DCD64 /* Toolbelt_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toolbelt_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				DE3540A91AEE9C5700AC95FE /* Toolbelt.h */,
-				DE3540C71AEE9E6F00AC95FE /* Aliases.swift */,
 				DE3540C41AEE9DA300AC95FE /* Colours.swift */,
 				DE3540C31AEE9CDE00AC95FE /* AVFoundation */,
 				DE3540A71AEE9C5700AC95FE /* Supporting Files */,
@@ -398,7 +394,6 @@
 			files = (
 				DEA28F651AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEA28F691AEEB19A004DCD64 /* Colours.swift in Sources */,
-				DEA28F6D1AEEB1A1004DCD64 /* Aliases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +403,6 @@
 			files = (
 				DEA28F641AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEA28F671AEEB199004DCD64 /* Colours.swift in Sources */,
-				DEA28F6C1AEEB1A1004DCD64 /* Aliases.swift in Sources */,
 				DEA28F3B1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,8 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0D2FB61AF151F600E5BB45 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEA28F681AEEB19A004DCD64 /* Colours.swift in Sources */,
-				DEA28F6B1AEEB1A0004DCD64 /* Aliases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +421,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA28F661AEEB198004DCD64 /* Colours.swift in Sources */,
-				DEA28F6A1AEEB1A0004DCD64 /* Aliases.swift in Sources */,
 				DEA28F591AEEB183004DCD64 /* Toolbelt_MacTests.swift in Sources */,
+				DE0D2FB71AF151F700E5BB45 /* AVURLAsset+PosterImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

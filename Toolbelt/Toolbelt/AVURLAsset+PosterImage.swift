@@ -7,7 +7,14 @@
 //
 
 import AVFoundation
-import UIKit
+
+#if os(OSX)
+    import AppKit
+    public typealias TKImage = NSImage
+#else
+    import UIKit
+    public typealias TKImage = UIImage
+#endif
 
 extension AVURLAsset {
     
@@ -15,12 +22,16 @@ extension AVURLAsset {
         return AVURLAsset(URL: url, options: [AVURLAssetPreferPreciseDurationAndTimingKey : true]).posterImage(err)
     }
     
-    public func posterImage(err : NSErrorPointer) -> UIImage? {
+    public func posterImage(err : NSErrorPointer) -> TKImage? {
         let gen = AVAssetImageGenerator(asset: self)
         gen.appliesPreferredTrackTransform = true
         gen.requestedTimeToleranceBefore = kCMTimeZero
         gen.requestedTimeToleranceAfter = kCMTimeZero
-        return UIImage(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
+        #if os(OSX)
+            return TKImage(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err), size: NSZeroSize)
+            #else
+            return TKImage(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
+        #endif
     }
     
 }
