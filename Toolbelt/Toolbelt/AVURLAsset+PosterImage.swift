@@ -7,33 +7,20 @@
 //
 
 import AVFoundation
-
-#if os(OSX)
-    import AppKit
-    typealias Image = NSImage
-#else
-    import UIKit
-    typealias Image = UIImage
-#endif
+import UIKit
 
 extension AVURLAsset {
     
-    class func posterImageFromAssetWithURL(url : NSURL!, err : NSErrorPointer) -> Image? {
+    public class func posterImageFromAssetWithURL(url : NSURL!, err : NSErrorPointer) -> UIImage? {
         return AVURLAsset(URL: url, options: [AVURLAssetPreferPreciseDurationAndTimingKey : true]).posterImage(err)
     }
     
-    func posterImage(err : NSErrorPointer) -> Image? {
+    public func posterImage(err : NSErrorPointer) -> UIImage? {
         let gen = AVAssetImageGenerator(asset: self)
         gen.appliesPreferredTrackTransform = true
         gen.requestedTimeToleranceBefore = kCMTimeZero
         gen.requestedTimeToleranceAfter = kCMTimeZero
-        
-        #if os(OSX)
-            return Image(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err), size: NSZeroSize)
-        #else
-            return Image(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
-        #endif
-        
+        return UIImage(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
     }
     
 }

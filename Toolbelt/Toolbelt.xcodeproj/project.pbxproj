@@ -15,8 +15,6 @@
 		DEA28F591AEEB183004DCD64 /* Toolbelt_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA28F581AEEB183004DCD64 /* Toolbelt_MacTests.swift */; };
 		DEA28F601AEEB18C004DCD64 /* Toolbelt.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3540A91AEE9C5700AC95FE /* Toolbelt.h */; };
 		DEA28F611AEEB18D004DCD64 /* Toolbelt.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3540A91AEE9C5700AC95FE /* Toolbelt.h */; };
-		DEA28F621AEEB193004DCD64 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
-		DEA28F631AEEB194004DCD64 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
 		DEA28F641AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
 		DEA28F651AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
 		DEA28F661AEEB198004DCD64 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colours.swift */; };
@@ -419,7 +417,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA28F621AEEB193004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEA28F681AEEB19A004DCD64 /* Colours.swift in Sources */,
 				DEA28F6B1AEEB1A0004DCD64 /* Aliases.swift in Sources */,
 			);
@@ -429,7 +426,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA28F631AEEB194004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEA28F661AEEB198004DCD64 /* Colours.swift in Sources */,
 				DEA28F6A1AEEB1A0004DCD64 /* Aliases.swift in Sources */,
 				DEA28F591AEEB183004DCD64 /* Toolbelt_MacTests.swift in Sources */,

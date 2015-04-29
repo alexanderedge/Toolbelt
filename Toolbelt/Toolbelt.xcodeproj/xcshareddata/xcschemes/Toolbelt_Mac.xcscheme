@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEA28F461AEEB183004DCD64"
-               BuildableName = "Toolbelt-Mac.framework"
+               BuildableName = "Toolbelt_Mac.framework"
                BlueprintName = "Toolbelt_Mac"
                ReferencedContainer = "container:Toolbelt.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEA28F461AEEB183004DCD64"
-            BuildableName = "Toolbelt-Mac.framework"
+            BuildableName = "Toolbelt_Mac.framework"
             BlueprintName = "Toolbelt_Mac"
             ReferencedContainer = "container:Toolbelt.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEA28F461AEEB183004DCD64"
-            BuildableName = "Toolbelt-Mac.framework"
+            BuildableName = "Toolbelt_Mac.framework"
             BlueprintName = "Toolbelt_Mac"
             ReferencedContainer = "container:Toolbelt.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEA28F461AEEB183004DCD64"
-            BuildableName = "Toolbelt-Mac.framework"
+            BuildableName = "Toolbelt_Mac.framework"
             BlueprintName = "Toolbelt_Mac"
             ReferencedContainer = "container:Toolbelt.xcodeproj">
          </BuildableReference>

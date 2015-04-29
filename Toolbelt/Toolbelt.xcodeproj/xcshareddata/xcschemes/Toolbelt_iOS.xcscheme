@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEA28F281AEEB16E004DCD64"
-               BuildableName = "Toolbelt-iOS.framework"
+               BuildableName = "Toolbelt_iOS.framework"
                BlueprintName = "Toolbelt_iOS"
                ReferencedContainer = "container:Toolbelt.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEA28F281AEEB16E004DCD64"
-            BuildableName = "Toolbelt-iOS.framework"
+            BuildableName = "Toolbelt_iOS.framework"
             BlueprintName = "Toolbelt_iOS"
             ReferencedContainer = "container:Toolbelt.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEA28F281AEEB16E004DCD64"
-            BuildableName = "Toolbelt-iOS.framework"
+            BuildableName = "Toolbelt_iOS.framework"
             BlueprintName = "Toolbelt_iOS"
             ReferencedContainer = "container:Toolbelt.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEA28F281AEEB16E004DCD64"
-            BuildableName = "Toolbelt-iOS.framework"
+            BuildableName = "Toolbelt_iOS.framework"
             BlueprintName = "Toolbelt_iOS"
             ReferencedContainer = "container:Toolbelt.xcodeproj">
          </BuildableReference>
