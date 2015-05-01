@@ -18,7 +18,7 @@ import AVFoundation
 
 extension AVURLAsset {
     
-    public class func posterImageFromAssetWithURL(url : NSURL!, err : NSErrorPointer) -> UIImage? {
+    public class func posterImageFromAssetWithURL(url : NSURL!, err : NSErrorPointer) -> TKImage? {
         return AVURLAsset(URL: url, options: [AVURLAssetPreferPreciseDurationAndTimingKey : true]).posterImage(err)
     }
     
