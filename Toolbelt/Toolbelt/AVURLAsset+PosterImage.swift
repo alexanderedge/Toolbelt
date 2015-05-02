@@ -1,37 +1,25 @@
 //
 //  AVURLAsset+PosterImage.swift
-//  Peeps
+//  Toolbelt
 //
 //  Created by Alexander G Edge on 27/04/2015.
-//  Copyright (c) 2015 Peeps Media Ltd. All rights reserved.
+//  Copyright (c) 2015 Alexander Edge. All rights reserved.
 //
 
 import AVFoundation
 
-#if os(OSX)
-    import AppKit
-    public typealias TKImage = NSImage
-#else
-    import UIKit
-    public typealias TKImage = UIImage
-#endif
-
 extension AVURLAsset {
     
-    public class func posterImageFromAssetWithURL(url : NSURL!, err : NSErrorPointer) -> TKImage? {
+    public class func posterImageFromAssetWithURL(url : NSURL!, err : NSErrorPointer) -> Image? {
         return AVURLAsset(URL: url, options: [AVURLAssetPreferPreciseDurationAndTimingKey : true]).posterImage(err)
     }
     
-    public func posterImage(err : NSErrorPointer) -> TKImage? {
+    public func posterImage(err : NSErrorPointer) -> Image? {
         let gen = AVAssetImageGenerator(asset: self)
         gen.appliesPreferredTrackTransform = true
         gen.requestedTimeToleranceBefore = kCMTimeZero
         gen.requestedTimeToleranceAfter = kCMTimeZero
-        #if os(OSX)
-            return TKImage(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err), size: NSZeroSize)
-            #else
-            return TKImage(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
-        #endif
+        return Image(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
     }
     
 }
