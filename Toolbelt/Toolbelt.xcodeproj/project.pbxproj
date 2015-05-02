@@ -22,6 +22,9 @@
 		DE8881CE1AF515F300CD45F6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Path.swift */; };
 		DE8881CF1AF515F300CD45F6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Path.swift */; };
 		DE8881D01AF515F400CD45F6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Path.swift */; };
+		DE8881D11AF517EC00CD45F6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
+		DE8881D21AF517F200CD45F6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C7E1AF508640034B4F1 /* Alert.swift */; };
+		DE8881D31AF517FD00CD45F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE2F1C801AF5095B0034B4F1 /* Localizable.strings */; };
 		DEA28F2E1AEEB16E004DCD64 /* Toolbelt-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA28F2D1AEEB16E004DCD64 /* Toolbelt-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEA28F341AEEB16E004DCD64 /* Toolbelt_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA28F291AEEB16E004DCD64 /* Toolbelt_iOS.framework */; };
 		DEA28F3B1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA28F3A1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift */; };
@@ -413,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8881D31AF517FD00CD45F6 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8881D11AF517EC00CD45F6 /* Application.swift in Sources */,
 				DEFB50C51AF512E700DCAD5B /* ViewController.swift in Sources */,
 				DEA28F641AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEFB50CA1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
@@ -453,6 +458,7 @@
 				DEA28F671AEEB199004DCD64 /* Colour.swift in Sources */,
 				DEA28F3B1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift in Sources */,
 				DE8881D01AF515F400CD45F6 /* Path.swift in Sources */,
+				DE8881D21AF517F200CD45F6 /* Alert.swift in Sources */,
 				DE2F1C7C1AF506F20034B4F1 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,7 +591,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Toolbelt-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -613,7 +619,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Toolbelt-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
