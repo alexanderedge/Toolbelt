@@ -37,6 +37,10 @@
 		DEA28F671AEEB199004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
 		DEA28F681AEEB19A004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
 		DEA28F691AEEB19A004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
+		DEB8A8281AF535B4004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
+		DEB8A8291AF536E0004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
+		DEB8A82A1AF536E1004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
+		DEB8A82B1AF536E1004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
 		DED4B26C1AF5029D00B84CB0 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DEFB50C41AF512D100DCAD5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C31AF512D100DCAD5B /* ViewController.swift */; };
 		DEFB50C51AF512E700DCAD5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C31AF512D100DCAD5B /* ViewController.swift */; };
@@ -86,6 +90,7 @@
 		DEA28F511AEEB183004DCD64 /* Toolbelt_MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toolbelt_MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA28F571AEEB183004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F581AEEB183004DCD64 /* Toolbelt_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbelt_MacTests.swift; sourceTree = "<group>"; };
+		DEB8A8271AF535B4004AE3D6 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		DEFB50C31AF512D100DCAD5B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerItem.swift; sourceTree = "<group>"; };
 		DEFB50C81AF513E800DCAD5B /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -161,6 +166,7 @@
 				DE2F1C821AF509DA0034B4F1 /* Application.swift */,
 				DEFB50C31AF512D100DCAD5B /* ViewController.swift */,
 				DEFB50C81AF513E800DCAD5B /* Path.swift */,
+				DEB8A8271AF535B4004AE3D6 /* Validation.swift */,
 				DE3540C31AEE9CDE00AC95FE /* AVFoundation */,
 				DE3540A71AEE9C5700AC95FE /* Supporting Files */,
 				DE2F1C801AF5095B0034B4F1 /* Localizable.strings */,
@@ -438,6 +444,7 @@
 				DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */,
 				DEFB50C41AF512D100DCAD5B /* ViewController.swift in Sources */,
 				DE4184261AF5003600C24ED3 /* Image.swift in Sources */,
+				DEB8A8281AF535B4004AE3D6 /* Validation.swift in Sources */,
 				DEA28F691AEEB19A004DCD64 /* Colour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +455,7 @@
 			files = (
 				DE8881D11AF517EC00CD45F6 /* Application.swift in Sources */,
 				DEFB50C51AF512E700DCAD5B /* ViewController.swift in Sources */,
+				DEB8A82A1AF536E1004AE3D6 /* Validation.swift in Sources */,
 				DEA28F641AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEFB50CA1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
 				DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */,
@@ -469,6 +477,7 @@
 				DEFB50CB1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
 				DED4B26C1AF5029D00B84CB0 /* Image.swift in Sources */,
 				DEA28F681AEEB19A004DCD64 /* Colour.swift in Sources */,
+				DEB8A8291AF536E0004AE3D6 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +491,7 @@
 				DEA28F591AEEB183004DCD64 /* Toolbelt_MacTests.swift in Sources */,
 				DE0D2FB71AF151F700E5BB45 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEFB50CC1AF514D500DCAD5B /* AVPlayerItem.swift in Sources */,
+				DEB8A82B1AF536E1004AE3D6 /* Validation.swift in Sources */,
 				DE2F1C7D1AF506F30034B4F1 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
