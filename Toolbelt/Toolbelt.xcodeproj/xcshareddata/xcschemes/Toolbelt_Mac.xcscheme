@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEA28F501AEEB183004DCD64"
-               BuildableName = "Toolbelt-MacTests.xctest"
-               BlueprintName = "Toolbelt-MacTests"
+               BuildableName = "Toolbelt_MacTests.xctest"
+               BlueprintName = "Toolbelt_MacTests"
                ReferencedContainer = "container:Toolbelt.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEA28F501AEEB183004DCD64"
-               BuildableName = "Toolbelt-MacTests.xctest"
-               BlueprintName = "Toolbelt-MacTests"
+               BuildableName = "Toolbelt_MacTests.xctest"
+               BlueprintName = "Toolbelt_MacTests"
                ReferencedContainer = "container:Toolbelt.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -78,12 +78,12 @@
 		DE4184251AF5003600C24ED3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		DEA28F291AEEB16E004DCD64 /* Toolbelt_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toolbelt_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA28F2C1AEEB16E004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEA28F331AEEB16E004DCD64 /* Toolbelt-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toolbelt-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA28F331AEEB16E004DCD64 /* Toolbelt_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toolbelt_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA28F391AEEB16E004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F3A1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbelt_iOSTests.swift; sourceTree = "<group>"; };
 		DEA28F471AEEB183004DCD64 /* Toolbelt_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toolbelt_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA28F4A1AEEB183004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEA28F511AEEB183004DCD64 /* Toolbelt-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toolbelt-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA28F511AEEB183004DCD64 /* Toolbelt_MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toolbelt_MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA28F571AEEB183004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F581AEEB183004DCD64 /* Toolbelt_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbelt_MacTests.swift; sourceTree = "<group>"; };
 		DEFB50C31AF512D100DCAD5B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,10 +131,10 @@
 				DE3540CA1AEE9EA100AC95FE /* LICENSE */,
 				DE3540CB1AEE9EA100AC95FE /* README.md */,
 				DE3540A61AEE9C5700AC95FE /* Toolbelt */,
-				DEA28F2A1AEEB16E004DCD64 /* Toolbelt-iOS */,
-				DEA28F371AEEB16E004DCD64 /* Toolbelt-iOSTests */,
-				DEA28F481AEEB183004DCD64 /* Toolbelt-Mac */,
-				DEA28F551AEEB183004DCD64 /* Toolbelt-MacTests */,
+				DEA28F2A1AEEB16E004DCD64 /* Toolbelt_iOS */,
+				DEA28F371AEEB16E004DCD64 /* Toolbelt_iOSTests */,
+				DEA28F481AEEB183004DCD64 /* Toolbelt_Mac */,
+				DEA28F551AEEB183004DCD64 /* Toolbelt_MacTests */,
 				DE3540A51AEE9C5700AC95FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				DEA28F291AEEB16E004DCD64 /* Toolbelt_iOS.framework */,
-				DEA28F331AEEB16E004DCD64 /* Toolbelt-iOSTests.xctest */,
+				DEA28F331AEEB16E004DCD64 /* Toolbelt_iOSTests.xctest */,
 				DEA28F471AEEB183004DCD64 /* Toolbelt_Mac.framework */,
-				DEA28F511AEEB183004DCD64 /* Toolbelt-MacTests.xctest */,
+				DEA28F511AEEB183004DCD64 /* Toolbelt_MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,12 +185,13 @@
 			name = AVFoundation;
 			sourceTree = "<group>";
 		};
-		DEA28F2A1AEEB16E004DCD64 /* Toolbelt-iOS */ = {
+		DEA28F2A1AEEB16E004DCD64 /* Toolbelt_iOS */ = {
 			isa = PBXGroup;
 			children = (
 				DEA28F2B1AEEB16E004DCD64 /* Supporting Files */,
 			);
-			path = "Toolbelt-iOS";
+			name = Toolbelt_iOS;
+			path = ../../Toolbelt/Toolbelt/Toolbelt_iOS;
 			sourceTree = "<group>";
 		};
 		DEA28F2B1AEEB16E004DCD64 /* Supporting Files */ = {
@@ -201,13 +202,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DEA28F371AEEB16E004DCD64 /* Toolbelt-iOSTests */ = {
+		DEA28F371AEEB16E004DCD64 /* Toolbelt_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
 				DEA28F3A1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift */,
 				DEA28F381AEEB16E004DCD64 /* Supporting Files */,
 			);
-			path = "Toolbelt-iOSTests";
+			name = Toolbelt_iOSTests;
+			path = ../../Toolbelt/Toolbelt/Toolbelt_iOSTests;
 			sourceTree = "<group>";
 		};
 		DEA28F381AEEB16E004DCD64 /* Supporting Files */ = {
@@ -218,12 +220,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DEA28F481AEEB183004DCD64 /* Toolbelt-Mac */ = {
+		DEA28F481AEEB183004DCD64 /* Toolbelt_Mac */ = {
 			isa = PBXGroup;
 			children = (
 				DEA28F491AEEB183004DCD64 /* Supporting Files */,
 			);
-			path = "Toolbelt-Mac";
+			name = Toolbelt_Mac;
+			path = ../../Toolbelt/Toolbelt/Toolbelt_Mac;
 			sourceTree = "<group>";
 		};
 		DEA28F491AEEB183004DCD64 /* Supporting Files */ = {
@@ -234,13 +237,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DEA28F551AEEB183004DCD64 /* Toolbelt-MacTests */ = {
+		DEA28F551AEEB183004DCD64 /* Toolbelt_MacTests */ = {
 			isa = PBXGroup;
 			children = (
 				DEA28F581AEEB183004DCD64 /* Toolbelt_MacTests.swift */,
 				DEA28F561AEEB183004DCD64 /* Supporting Files */,
 			);
-			path = "Toolbelt-MacTests";
+			name = Toolbelt_MacTests;
+			path = ../../Toolbelt/Toolbelt/Toolbelt_MacTests;
 			sourceTree = "<group>";
 		};
 		DEA28F561AEEB183004DCD64 /* Supporting Files */ = {
@@ -291,9 +295,9 @@
 			productReference = DEA28F291AEEB16E004DCD64 /* Toolbelt_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DEA28F321AEEB16E004DCD64 /* Toolbelt-iOSTests */ = {
+		DEA28F321AEEB16E004DCD64 /* Toolbelt_iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA28F3F1AEEB16E004DCD64 /* Build configuration list for PBXNativeTarget "Toolbelt-iOSTests" */;
+			buildConfigurationList = DEA28F3F1AEEB16E004DCD64 /* Build configuration list for PBXNativeTarget "Toolbelt_iOSTests" */;
 			buildPhases = (
 				DEA28F2F1AEEB16E004DCD64 /* Sources */,
 				DEA28F301AEEB16E004DCD64 /* Frameworks */,
@@ -304,9 +308,9 @@
 			dependencies = (
 				DEA28F361AEEB16E004DCD64 /* PBXTargetDependency */,
 			);
-			name = "Toolbelt-iOSTests";
+			name = Toolbelt_iOSTests;
 			productName = "Toolbelt-iOSTests";
-			productReference = DEA28F331AEEB16E004DCD64 /* Toolbelt-iOSTests.xctest */;
+			productReference = DEA28F331AEEB16E004DCD64 /* Toolbelt_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DEA28F461AEEB183004DCD64 /* Toolbelt_Mac */ = {
@@ -327,9 +331,9 @@
 			productReference = DEA28F471AEEB183004DCD64 /* Toolbelt_Mac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DEA28F501AEEB183004DCD64 /* Toolbelt-MacTests */ = {
+		DEA28F501AEEB183004DCD64 /* Toolbelt_MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA28F5D1AEEB183004DCD64 /* Build configuration list for PBXNativeTarget "Toolbelt-MacTests" */;
+			buildConfigurationList = DEA28F5D1AEEB183004DCD64 /* Build configuration list for PBXNativeTarget "Toolbelt_MacTests" */;
 			buildPhases = (
 				DEA28F4D1AEEB183004DCD64 /* Sources */,
 				DEA28F4E1AEEB183004DCD64 /* Frameworks */,
@@ -340,9 +344,9 @@
 			dependencies = (
 				DEA28F541AEEB183004DCD64 /* PBXTargetDependency */,
 			);
-			name = "Toolbelt-MacTests";
+			name = Toolbelt_MacTests;
 			productName = "Toolbelt-MacTests";
-			productReference = DEA28F511AEEB183004DCD64 /* Toolbelt-MacTests.xctest */;
+			productReference = DEA28F511AEEB183004DCD64 /* Toolbelt_MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -381,9 +385,9 @@
 			projectRoot = "";
 			targets = (
 				DEA28F281AEEB16E004DCD64 /* Toolbelt_iOS */,
-				DEA28F321AEEB16E004DCD64 /* Toolbelt-iOSTests */,
+				DEA28F321AEEB16E004DCD64 /* Toolbelt_iOSTests */,
 				DEA28F461AEEB183004DCD64 /* Toolbelt_Mac */,
-				DEA28F501AEEB183004DCD64 /* Toolbelt-MacTests */,
+				DEA28F501AEEB183004DCD64 /* Toolbelt_MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -522,6 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Toolbelt-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -554,6 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Toolbelt-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -583,7 +589,6 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "Toolbelt-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -611,7 +616,6 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Toolbelt-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -645,7 +649,6 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "Toolbelt-iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -672,7 +675,6 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Toolbelt-iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -705,7 +707,6 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "Toolbelt-Mac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -733,7 +734,6 @@
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Toolbelt-Mac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -766,7 +766,6 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "Toolbelt-MacTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -793,7 +792,6 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Toolbelt-MacTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -823,7 +821,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA28F3F1AEEB16E004DCD64 /* Build configuration list for PBXNativeTarget "Toolbelt-iOSTests" */ = {
+		DEA28F3F1AEEB16E004DCD64 /* Build configuration list for PBXNativeTarget "Toolbelt_iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA28F401AEEB16E004DCD64 /* Debug */,
@@ -841,7 +839,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA28F5D1AEEB183004DCD64 /* Build configuration list for PBXNativeTarget "Toolbelt-MacTests" */ = {
+		DEA28F5D1AEEB183004DCD64 /* Build configuration list for PBXNativeTarget "Toolbelt_MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA28F5E1AEEB183004DCD64 /* Debug */,
