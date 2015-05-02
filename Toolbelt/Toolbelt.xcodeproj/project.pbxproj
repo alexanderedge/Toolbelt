@@ -22,6 +22,10 @@
 		DE8881CE1AF515F300CD45F6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Path.swift */; };
 		DE8881CF1AF515F300CD45F6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Path.swift */; };
 		DE8881D01AF515F400CD45F6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Path.swift */; };
+		DE7F07491AF5411900B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
+		DE7F074A1AF5419F00B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
+		DE7F07521AF5498600B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
+		DE7F07531AF5498700B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
 		DE8881D11AF517EC00CD45F6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
 		DE8881D21AF517F200CD45F6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C7E1AF508640034B4F1 /* Alert.swift */; };
 		DE8881D31AF517FD00CD45F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE2F1C801AF5095B0034B4F1 /* Localizable.strings */; };
@@ -80,6 +84,7 @@
 		DE3540CA1AEE9EA100AC95FE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE3540CB1AEE9EA100AC95FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DE4184251AF5003600C24ED3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		DE7F07481AF5411900B72E7C /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		DEA28F291AEEB16E004DCD64 /* Toolbelt_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toolbelt_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA28F2C1AEEB16E004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F331AEEB16E004DCD64 /* Toolbelt_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toolbelt_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				DE3540A91AEE9C5700AC95FE /* Toolbelt.h */,
+				DE7F07481AF5411900B72E7C /* Security.swift */,
 				DE3540C41AEE9DA300AC95FE /* Colour.swift */,
 				DE4184251AF5003600C24ED3 /* Image.swift */,
 				DE2F1C791AF505E70034B4F1 /* Geometry.swift */,
@@ -443,6 +449,7 @@
 				DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */,
 				DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */,
 				DEFB50C41AF512D100DCAD5B /* ViewController.swift in Sources */,
+				DE7F07491AF5411900B72E7C /* Security.swift in Sources */,
 				DE4184261AF5003600C24ED3 /* Image.swift in Sources */,
 				DEB8A8281AF535B4004AE3D6 /* Validation.swift in Sources */,
 				DEA28F691AEEB19A004DCD64 /* Colour.swift in Sources */,
@@ -458,6 +465,7 @@
 				DEB8A82A1AF536E1004AE3D6 /* Validation.swift in Sources */,
 				DEA28F641AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
 				DEFB50CA1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
+				DE7F07531AF5498700B72E7C /* Security.swift in Sources */,
 				DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */,
 				DEA28F671AEEB199004DCD64 /* Colour.swift in Sources */,
 				DEA28F3B1AEEB16E004DCD64 /* Toolbelt_iOSTests.swift in Sources */,
@@ -472,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8881CE1AF515F300CD45F6 /* Path.swift in Sources */,
+				DE7F074A1AF5419F00B72E7C /* Security.swift in Sources */,
 				DE0D2FB61AF151F600E5BB45 /* AVURLAsset+PosterImage.swift in Sources */,
 				DE2F1C7B1AF506F10034B4F1 /* Geometry.swift in Sources */,
 				DEFB50CB1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
@@ -490,6 +499,7 @@
 				DE2F1C781AF503B70034B4F1 /* Image.swift in Sources */,
 				DEA28F591AEEB183004DCD64 /* Toolbelt_MacTests.swift in Sources */,
 				DE0D2FB71AF151F700E5BB45 /* AVURLAsset+PosterImage.swift in Sources */,
+				DE7F07521AF5498600B72E7C /* Security.swift in Sources */,
 				DEFB50CC1AF514D500DCAD5B /* AVPlayerItem.swift in Sources */,
 				DEB8A82B1AF536E1004AE3D6 /* Validation.swift in Sources */,
 				DE2F1C7D1AF506F30034B4F1 /* Geometry.swift in Sources */,
@@ -538,6 +548,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SWIFT_INCLUDE_PATHS = "${SOURCE_ROOT}/Toolbelt/CommonCrypto";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Toolbelt-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -571,6 +582,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SWIFT_INCLUDE_PATHS = "${SOURCE_ROOT}/Toolbelt/CommonCrypto";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Toolbelt-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -587,6 +599,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -619,6 +632,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

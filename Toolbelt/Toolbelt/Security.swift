@@ -1,5 +1,5 @@
 //
-//  Path.swift
+//  Security.swift
 //  Toolbelt
 //
 //  The MIT License (MIT)
@@ -25,32 +25,24 @@
 //  THE SOFTWARE.
 
 import Foundation
+import CommonCrypto
 
-extension String {
+extension NSData {
     
-    public static func temporaryFilePathWithExtension(ext : String?) -> String {
-        let path = NSTemporaryDirectory().stringByAppendingPathComponent(NSUUID().UUIDString)
-        if (ext != nil) {
-            return path.stringByAppendingPathExtension(ext!)!
-        } else {
-            return path
+    public func hexadecimalString () -> String {
+        var str = String()
+        var bytes = [UInt8](count: self.length, repeatedValue: 0)
+        self.getBytes(&bytes, length: self.length)
+        for byte in bytes {
+            str += String(format: "%02x",byte)
         }
+        return str
     }
     
-    public static func temporaryFilePath () -> String {
-        return temporaryFilePathWithExtension(nil)
-    }
-    
-}
-
-extension NSURL {
-    
-    public class func temporaryFileURLWithExtension(ext : String?) -> NSURL {
-        return NSURL(string: String.temporaryFilePathWithExtension(ext))!
-    }
-    
-    public class func temporaryFileURL() -> NSURL {
-        return NSURL(string: String.temporaryFilePath())!
+    public func SHA1 () -> NSData {
+        var digest = [UInt8](count: Int(CC_SHA1_DIGEST_LENGTH), repeatedValue: 0)
+        CC_SHA1(self.bytes, CC_LONG(self.length), &digest)
+        return NSData(bytes: digest, length: Int(CC_SHA1_DIGEST_LENGTH))
     }
     
 }
