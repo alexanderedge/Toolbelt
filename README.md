@@ -14,4 +14,4 @@ Toolbelt can be installed using [Carthage](https://github.com/Carthage/Carthage)
 # Usage
 For Objective-C, add `#import <Toolbelt_iOS/Toolbelt-Swift.h>` or `#import <Toolbelt_Mac/Toolbelt-Swift.h>` for iOS and Mac, respectively.
 
-For Swift, add 'import Toolbelt_iOS` or `import Toolbelt_Mac`.
+For Swift, add `import Toolbelt_iOS` or `import Toolbelt_Mac`.
