@@ -37,15 +37,15 @@ import CoreGraphics
             self.init(CGImage : cgImage, size: CGSizeZero);
         }
     
-        public class func imageWithColour(colour:Colour, size:CGSize) -> Image {
+        public class func imageWithColour(colour: Colour, size: CGSize) -> Image {
             let width : size_t = Int(size.width)
             let height : size_t = Int(size.height)
-            let bitsPerComponent : size_t = 8 * 4
-            let bytesPerRow : size_t = 0
+            let bitsPerComponent : size_t = 8
+            let bytesPerRow : size_t = 4 * width
             let colourSpace = CGColorSpaceCreateDeviceRGB()
             let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.PremultipliedLast.rawValue)
             let ctx = CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colourSpace, bitmapInfo)
-            colour.setFill()
+            CGContextSetFillColorWithColor(ctx, colour.CGColor)
             CGContextFillRect(ctx,CGRect(origin: CGPointZero,size:size));
             return Image(CGImage:CGBitmapContextCreateImage(ctx))!
         }
