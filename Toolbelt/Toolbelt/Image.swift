@@ -46,7 +46,7 @@ import CoreGraphics
             let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.PremultipliedLast.rawValue)
             let ctx = CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colourSpace, bitmapInfo)
             CGContextSetFillColorWithColor(ctx, colour.CGColor)
-            CGContextFillRect(ctx,CGRect(origin: CGPointZero,size:size));
+            CGContextFillRect(ctx,CGRect(origin: CGPointZero,size: size));
             return Image(CGImage:CGBitmapContextCreateImage(ctx))!
         }
     
