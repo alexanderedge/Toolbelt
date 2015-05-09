@@ -50,7 +50,7 @@ extension Application {
     
     #if os(iOS)
     
-    public func appSettingsURL() -> NSURL {
+    public class func appSettingsURL() -> NSURL {
         return NSURL(string: UIApplicationOpenSettingsURLString)!
     }
     
