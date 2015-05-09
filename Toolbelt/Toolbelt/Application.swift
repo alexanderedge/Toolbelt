@@ -24,34 +24,39 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import Foundation
-
 
 #if os(iOS)
-
     import UIKit.UIApplication
+    typealias Application = UIApplication
+#else
+    import AppKit.NSApplication
+    typealias Application = NSApplication
+#endif
     
-    extension UIApplication {
-        
-        public func isFirstRun() -> Bool {
-            let key = "uk.co.alexedge.toolbelt.first_run";
-            let defaults = NSUserDefaults.standardUserDefaults()
-            if (defaults.boolForKey(key)) {
-                defaults.setBool(false, forKey: key)
-                defaults.synchronize()
-                return true
-            } else {
-                return false
-            }
-        }
-        
-        public func appSettingsURL() -> NSURL {
-            return NSURL(string: UIApplicationOpenSettingsURLString)!
-        }
 
-        public func launchAppSettings() {
-            self.openURL(appSettingsURL())
+extension Application {
+    
+    public func isFirstRun() -> Bool {
+        let key = "uk.co.alexedge.toolbelt.first_run";
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if (defaults.boolForKey(key)) {
+            defaults.setBool(false, forKey: key)
+            defaults.synchronize()
+            return true
+        } else {
+            return false
         }
     }
-
-#endif
+    
+    #if os(iOS) && APPLICATION_EXTENSION_API_ONLY
+    
+    public func appSettingsURL() -> NSURL {
+        return NSURL(string: UIApplicationOpenSettingsURLString)!
+    }
+    
+    public func launchAppSettings() {
+        self.openURL(appSettingsURL())
+    }
+    
+    #endif
+}
