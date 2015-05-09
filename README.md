@@ -1,6 +1,8 @@
 # Toolbelt
 Toolbelt is a collection of class extensions for iOS and OS X development written in Swift. You can use Toolbelt in your Objective-C or Swift projects.
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 # Requirements
 Toolbelt requires iOS 8.0 or OS X 10.10.
 
