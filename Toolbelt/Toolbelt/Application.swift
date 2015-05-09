@@ -48,14 +48,10 @@ extension Application {
         }
     }
     
-    #if os(iOS) && APPLICATION_EXTENSION_API_ONLY
+    #if os(iOS)
     
     public func appSettingsURL() -> NSURL {
         return NSURL(string: UIApplicationOpenSettingsURLString)!
-    }
-    
-    public func launchAppSettings() {
-        self.openURL(appSettingsURL())
     }
     
     #endif
