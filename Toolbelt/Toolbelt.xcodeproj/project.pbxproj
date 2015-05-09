@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE0D2FB61AF151F600E5BB45 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
-		DE0D2FB71AF151F700E5BB45 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
+		DE0D2FB61AF151F600E5BB45 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
+		DE0D2FB71AF151F700E5BB45 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
 		DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DE2F1C781AF503B70034B4F1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
@@ -35,8 +35,8 @@
 		DEA28F591AEEB183004DCD64 /* Toolbelt_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA28F581AEEB183004DCD64 /* Toolbelt_MacTests.swift */; };
 		DEA28F601AEEB18C004DCD64 /* Toolbelt.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3540A91AEE9C5700AC95FE /* Toolbelt.h */; };
 		DEA28F611AEEB18D004DCD64 /* Toolbelt.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3540A91AEE9C5700AC95FE /* Toolbelt.h */; };
-		DEA28F641AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
-		DEA28F651AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */; };
+		DEA28F641AEEB195004DCD64 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
+		DEA28F651AEEB195004DCD64 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
 		DEA28F661AEEB198004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
 		DEA28F671AEEB199004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
 		DEA28F681AEEB19A004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
@@ -78,7 +78,7 @@
 		DE2F1C821AF509DA0034B4F1 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		DE3540A81AEE9C5700AC95FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE3540A91AEE9C5700AC95FE /* Toolbelt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toolbelt.h; sourceTree = "<group>"; };
-		DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVURLAsset+PosterImage.swift"; sourceTree = "<group>"; };
+		DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVURLAsset.swift; sourceTree = "<group>"; };
 		DE3540C41AEE9DA300AC95FE /* Colour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
 		DE3540CA1AEE9EA100AC95FE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE3540CB1AEE9EA100AC95FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 		DE3540C31AEE9CDE00AC95FE /* AVFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				DE3540C01AEE9CD800AC95FE /* AVURLAsset+PosterImage.swift */,
+				DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */,
 				DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */,
 			);
 			name = AVFoundation;
@@ -444,7 +444,7 @@
 			files = (
 				DEFB50C71AF513A600DCAD5B /* AVPlayerItem.swift in Sources */,
 				DE2F1C831AF509DA0034B4F1 /* Application.swift in Sources */,
-				DEA28F651AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
+				DEA28F651AEEB195004DCD64 /* AVURLAsset.swift in Sources */,
 				DEFB50C91AF513E800DCAD5B /* Filepath.swift in Sources */,
 				DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */,
 				DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */,
@@ -463,7 +463,7 @@
 				DE8881D11AF517EC00CD45F6 /* Application.swift in Sources */,
 				DEFB50C51AF512E700DCAD5B /* ViewController.swift in Sources */,
 				DEB8A82A1AF536E1004AE3D6 /* Validation.swift in Sources */,
-				DEA28F641AEEB195004DCD64 /* AVURLAsset+PosterImage.swift in Sources */,
+				DEA28F641AEEB195004DCD64 /* AVURLAsset.swift in Sources */,
 				DEFB50CA1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
 				DE7F07531AF5498700B72E7C /* Security.swift in Sources */,
 				DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */,
@@ -481,7 +481,7 @@
 			files = (
 				DE8881CE1AF515F300CD45F6 /* Filepath.swift in Sources */,
 				DE7F074A1AF5419F00B72E7C /* Security.swift in Sources */,
-				DE0D2FB61AF151F600E5BB45 /* AVURLAsset+PosterImage.swift in Sources */,
+				DE0D2FB61AF151F600E5BB45 /* AVURLAsset.swift in Sources */,
 				DE2F1C7B1AF506F10034B4F1 /* Geometry.swift in Sources */,
 				DEFB50CB1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
 				DED4B26C1AF5029D00B84CB0 /* Image.swift in Sources */,
@@ -498,7 +498,7 @@
 				DEA28F661AEEB198004DCD64 /* Colour.swift in Sources */,
 				DE2F1C781AF503B70034B4F1 /* Image.swift in Sources */,
 				DEA28F591AEEB183004DCD64 /* Toolbelt_MacTests.swift in Sources */,
-				DE0D2FB71AF151F700E5BB45 /* AVURLAsset+PosterImage.swift in Sources */,
+				DE0D2FB71AF151F700E5BB45 /* AVURLAsset.swift in Sources */,
 				DE7F07521AF5498600B72E7C /* Security.swift in Sources */,
 				DEFB50CC1AF514D500DCAD5B /* AVPlayerItem.swift in Sources */,
 				DEB8A82B1AF536E1004AE3D6 /* Validation.swift in Sources */,

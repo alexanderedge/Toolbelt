@@ -1,5 +1,5 @@
 //
-//  AVURLAsset+PosterImage.swift
+//  AVURLAsset.swift
 //  Toolbelt
 //
 //  The MIT License (MIT)
