@@ -24,9 +24,34 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import Foundation
 import CoreGraphics
 
+extension CGRect {
+    
+    public init (center: CGPoint, size: CGSize) {
+        let originX = center.x - (size.width / 2)
+        let originY = center.y - (size.height / 2)
+        self.init(origin: CGPoint(x: originX, y: originY), size: size)
+    }
+    
+    public func center() -> CGPoint {
+        return CGPointMake(CGRectGetMidX(self), CGRectGetMidY(self))
+    }
+    
+    public func diagonal() -> CGFloat {
+        return sqrt(pow(CGRectGetWidth(self),2) + pow(CGRectGetHeight(self),2))
+    }
+
+}
+
+public func CGRectMakeWithCenter(center : CGPoint, size : CGSize) -> CGRect {
+    return CGRect(center: center, size: size)
+}
+
+public func CGRectGetCenter(rect : CGRect) -> CGPoint {
+    return rect.center()
+}
+
 public func CGRectDiagonal(rect: CGRect) -> CGFloat {
-    return sqrt(pow(rect.size.width,2) + pow(rect.size.height,2))
+    return rect.diagonal()
 }
