@@ -46,11 +46,11 @@ extension String {
 extension NSURL {
     
     public class func temporaryFileURLWithExtension(ext : String?) -> NSURL {
-        return NSURL(string: String.temporaryFilePathWithExtension(ext))!
+        return NSURL(fileURLWithPath: String.temporaryFilePathWithExtension(ext))!
     }
     
     public class func temporaryFileURL() -> NSURL {
-        return NSURL(string: String.temporaryFilePath())!
+        return NSURL(fileURLWithPath: String.temporaryFilePath())!
     }
     
 }
