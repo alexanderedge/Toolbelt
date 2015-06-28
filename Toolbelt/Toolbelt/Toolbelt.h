@@ -33,5 +33,3 @@ FOUNDATION_EXPORT double ToolbeltVersionNumber;
 FOUNDATION_EXPORT const unsigned char ToolbeltVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Toolbelt/PublicHeader.h>
-
-#import <Toolbelt/Toolbelt-Swift.h>
