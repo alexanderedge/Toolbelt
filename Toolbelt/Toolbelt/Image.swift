@@ -32,21 +32,20 @@ import CoreGraphics
     
     extension Image {
         
-        public convenience init?(CGImage cgImage: CGImage) {
+        public convenience init(CGImage cgImage: CGImage) {
             self.init(CGImage : cgImage, size: CGSizeZero);
         }
     
         public class func imageWithColour(colour: Colour, size: CGSize) -> Image {
-            let width : size_t = Int(size.width)
-            let height : size_t = Int(size.height)
-            let bitsPerComponent : size_t = 8
-            let bytesPerRow : size_t = 4 * width
+            let width = Int(size.width)
+            let height = Int(size.height)
+            let bitsPerComponent = 8
+            let bytesPerRow = 4 * width
             let colourSpace = CGColorSpaceCreateDeviceRGB()
-            let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.PremultipliedLast.rawValue)
-            let ctx = CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colourSpace, bitmapInfo)
+            let ctx = CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colourSpace, CGImageAlphaInfo.PremultipliedLast.rawValue)
             CGContextSetFillColorWithColor(ctx, colour.CGColor)
             CGContextFillRect(ctx,CGRect(origin: CGPointZero,size: size));
-            return Image(CGImage:CGBitmapContextCreateImage(ctx))!
+            return Image(CGImage:CGBitmapContextCreateImage(ctx)!)
         }
     
     }
