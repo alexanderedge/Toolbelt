@@ -51,6 +51,18 @@ class ToolbeltTestsCommon: XCTestCase {
         XCTAssertNotNil(image, "image shouldn't be nil")
     }
 
+    func testColourCreationWithInt () {
+        let colour = Colour(hex: 0x00801e);
+        XCTAssertEqual(colour, Colour(red: 0, green: 128 / 255, blue: 30 / 255, alpha: 1))
+    }
+    
+    func testColourCreationWithString () {
+        var colour = Colour(hexString: "00801e");
+        XCTAssertEqual(colour, Colour(red: 0, green: 128 / 255, blue: 30 / 255, alpha: 1))
+
+        colour = Colour(hexString: "#00801e");
+        XCTAssertEqual(colour, Colour(red: 0, green: 128 / 255, blue: 30 / 255, alpha: 1))
+    }
     
 }
 
