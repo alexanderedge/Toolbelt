@@ -31,7 +31,7 @@ extension AVPlayerItem {
     public class func playerItemWithData(data : NSData) throws -> AVPlayerItem {
         let tempURL = NSURL.temporaryFileURL()
         try data.writeToURL(tempURL, options: NSDataWritingOptions(rawValue: 0))
-        return self(URL: tempURL)
+        return self.init(URL: tempURL)
     }
     
 }
