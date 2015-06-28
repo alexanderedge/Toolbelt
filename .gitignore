@@ -17,6 +17,3 @@ DerivedData
 *.ipa
 *.xcuserstate
 
-Carthage.pkg
-Carthage/Checkouts
-Carthage/Build
