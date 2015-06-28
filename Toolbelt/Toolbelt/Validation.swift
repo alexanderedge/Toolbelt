@@ -31,14 +31,7 @@ extension String {
     public func validateWithRegexPattern(regex : String) -> Bool {
         return NSPredicate(format: "SELF MATCHES %@", argumentArray: [regex]).evaluateWithObject(self)
     }
-    
-    // This uses built-in iOS data detection.
-    // You might want something more powerful such as libPhoneNumber
-    // https://github.com/iziz/libPhoneNumber-iOS
-    public func isValidPhoneNumber () -> Bool {
-        return NSDataDetector(types: NSTextCheckingType.PhoneNumber.rawValue, error: nil)?.numberOfMatchesInString(self, options: nil, range: NSMakeRange(0, count(self))) > 0
-    }
-    
+
     public func isValidEmail () -> Bool {
         return self.validateWithRegexPattern(".+@([A-Za-z0-9]+\\.)+[A-Za-z]{2}[A-Za-z]*")
     }

@@ -55,3 +55,24 @@ public func CGRectGetCenter(rect : CGRect) -> CGPoint {
 public func CGRectDiagonal(rect: CGRect) -> CGFloat {
     return rect.diagonal()
 }
+
+// return rect2 that fits inside rect1, resizing and moving if necessary
+public func CGRectInsideRect(rect1 : CGRect, rect2 : CGRect) -> CGRect {
+
+    let width = min(CGRectGetWidth(rect1), CGRectGetWidth(rect2));
+    let height = min(CGRectGetHeight(rect1), CGRectGetHeight(rect2));
+    var xPos = max(CGRectGetMinX(rect1), CGRectGetMinX(rect2));
+    var yPos = max(CGRectGetMinY(rect1), CGRectGetMinY(rect2));
+    
+    // check right
+    if ((xPos + width) > CGRectGetMaxX(rect1)) {
+        xPos = CGRectGetMaxX(rect1) - width;
+    }
+    
+    // check bottom
+    if ((yPos + height) > CGRectGetMaxY(rect1)) {
+        yPos = CGRectGetMaxY(rect1) - height;
+    }
+    
+    return CGRectMake(xPos, yPos, width, height);
+}

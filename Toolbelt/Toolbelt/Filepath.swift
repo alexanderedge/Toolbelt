@@ -30,8 +30,8 @@ extension String {
     
     public static func temporaryFilePathWithExtension(ext : String?) -> String {
         let path = NSTemporaryDirectory().stringByAppendingPathComponent(NSUUID().UUIDString)
-        if (ext != nil) {
-            return path.stringByAppendingPathExtension(ext!)!
+        if let pathExtension = ext {
+            return path.stringByAppendingPathExtension(pathExtension)!
         } else {
             return path
         }
@@ -46,11 +46,11 @@ extension String {
 extension NSURL {
     
     public class func temporaryFileURLWithExtension(ext : String?) -> NSURL {
-        return NSURL(fileURLWithPath: String.temporaryFilePathWithExtension(ext))!
+        return NSURL(fileURLWithPath: String.temporaryFilePathWithExtension(ext))
     }
     
     public class func temporaryFileURL() -> NSURL {
-        return NSURL(fileURLWithPath: String.temporaryFilePath())!
+        return NSURL(fileURLWithPath: String.temporaryFilePath())
     }
     
 }

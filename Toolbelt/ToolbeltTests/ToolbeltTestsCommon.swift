@@ -45,14 +45,7 @@ class ToolbeltTestsCommon: XCTestCase {
         XCTAssert(email.isValidEmail(), "email is valid")
         
     }
-    
-    func testPhoneNumberValidation () {
         
-        let number = "01202252409"
-        XCTAssert(number.isValidPhoneNumber(), "phone number is valid")
-        
-    }
-    
     func testImageGeneration () {
         let image = Image.imageWithColour(Colour.redColor(), size: CGSizeMake(50, 50))
         XCTAssertNotNil(image, "image shouldn't be nil")

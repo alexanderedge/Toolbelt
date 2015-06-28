@@ -28,16 +28,17 @@ import AVFoundation
 
 extension AVURLAsset {
     
-    public class func posterImageFromAssetWithURL(url : NSURL!, err : NSErrorPointer) -> Image? {
-        return AVURLAsset(URL: url, options: [AVURLAssetPreferPreciseDurationAndTimingKey : true]).posterImage(err)
+    public class func posterImageFromAssetWithURL(url : NSURL!) throws -> Image {
+        return try AVURLAsset(URL: url, options: [AVURLAssetPreferPreciseDurationAndTimingKey : true]).posterImage()
     }
     
-    public func posterImage(err : NSErrorPointer) -> Image? {
+    public func posterImage() throws -> Image {
         let gen = AVAssetImageGenerator(asset: self)
         gen.appliesPreferredTrackTransform = true
         gen.requestedTimeToleranceBefore = kCMTimeZero
         gen.requestedTimeToleranceAfter = kCMTimeZero
-        return Image(CGImage: gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil, error: err))
+        let cgImage = try gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil)
+        return Image(CGImage: cgImage);
     }
     
 }

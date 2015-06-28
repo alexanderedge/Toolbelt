@@ -28,13 +28,10 @@ import AVFoundation
 
 extension AVPlayerItem {
     
-    public class func playerItemWithData(data : NSData) -> AVPlayerItem? {
+    public class func playerItemWithData(data : NSData) throws -> AVPlayerItem {
         let tempURL = NSURL.temporaryFileURL()
-        if data.writeToURL(tempURL, atomically: false) {
-            return self(URL: tempURL)
-        } else {
-            return nil
-        }
+        try data.writeToURL(tempURL, options: NSDataWritingOptions(rawValue: 0))
+        return self(URL: tempURL)
     }
     
 }

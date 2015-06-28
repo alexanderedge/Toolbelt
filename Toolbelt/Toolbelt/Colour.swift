@@ -42,4 +42,16 @@ extension Colour {
         return Colour(red: randomComponent(), green: randomComponent(), blue: randomComponent(), alpha: 1.0)
     }
     
+    public convenience init(integer red: Int, green: Int, blue: Int, alpha: Int) {
+        self.init(red : CGFloat(red) / 255, green: CGFloat(green) / 255, blue: CGFloat(blue) / 255, alpha: CGFloat(alpha) / 255)
+    }
+    
+    public convenience init(hex : Int) {
+        let red = (hex & 0xff000000) >> 24;
+        let green = (hex & 0x00ff0000) >> 16;
+        let blue = (hex & 0x0000ff00) >> 8;
+        let alpha = (hex & 0x000000ff);
+        self.init(integer: red, green: green, blue : blue, alpha : alpha)
+    }
+    
 }
