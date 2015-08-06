@@ -54,3 +54,10 @@ extension NSURL {
     }
     
 }
+
+extension NSFileManager {
+    
+    class func applicationDocumentsDirectory() -> NSURL {
+        return NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).last as NSURL!
+    }
+}
