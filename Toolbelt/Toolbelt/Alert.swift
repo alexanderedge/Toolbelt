@@ -38,10 +38,27 @@
             self.addCancelButtonWithHandler(nil)
         }
         
-        public class func alertControllerForErrorWithTitle(title:String, error : NSError) -> UIAlertController {
-            let vc = UIAlertController(title: title, message: error.localizedDescription, preferredStyle: .Alert)
-            vc.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
-            return vc
+        public convenience init(title : String, error : NSError) {
+            self.init(title: title, message: error.localizedDescription, preferredStyle: .Alert)
+            self.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
+        }
+        
+        public convenience init(title : String, message : String) {
+            self.init(title: title, message: message, preferredStyle: .Alert)
+            self.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
+        }
+        
+        
+    }
+    
+    extension UIViewController {
+        
+        public func showAlert(title : String, message : String) {
+            self.presentViewController(UIAlertController(title: title, message: message), animated: true, completion: nil)
+        }
+        
+        public func showAlert(title : String, error : NSError) {
+            self.presentViewController(UIAlertController(title: title, error: error), animated: true, completion: nil)
         }
         
     }
