@@ -29,11 +29,12 @@ import Foundation
 extension String {
     
     public static func temporaryFilePathWithExtension(ext : String?) -> String {
-        let path = NSTemporaryDirectory().stringByAppendingPathComponent(NSUUID().UUIDString)
+        // we must cast to NSString since stringByAppendingPathComponent is unavailable for String
+        let path : NSString = (NSTemporaryDirectory() as NSString).stringByAppendingPathComponent(NSUUID().UUIDString) as NSString
         if let pathExtension = ext {
             return path.stringByAppendingPathExtension(pathExtension)!
         } else {
-            return path
+            return path as String
         }
     }
     
@@ -57,7 +58,8 @@ extension NSURL {
 
 extension NSFileManager {
     
-    class func applicationDocumentsDirectory() -> NSURL {
-        return NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).last as NSURL!
+    public func applicationDocumentsDirectory() -> NSURL {
+        return self.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).last as NSURL!
     }
+    
 }
