@@ -24,45 +24,44 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#if os(iOS)
+import UIKit.UIAlertController
+
+extension UIAlertController {
     
-    import UIKit.UIAlertController
-    
-    extension UIAlertController {
-        
-        public func addCancelButtonWithHandler(handler: ((UIAlertAction!) -> Void)?) {
-            self.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancels the current alert"), style: .Cancel, handler: handler))
-        }
-        
-        public func addCancelButton() {
-            self.addCancelButtonWithHandler(nil)
-        }
-        
-        public convenience init(title : String, error : NSError) {
-            self.init(title: title, message: error.localizedDescription, preferredStyle: .Alert)
-            self.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
-        }
-        
-        public convenience init(title : String, message : String) {
-            self.init(title: title, message: message, preferredStyle: .Alert)
-            self.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
-        }
-        
-        
+    public func addCancelButton(title : String = NSLocalizedString("Cancel", comment: "Cancels the current alert"), handler: ((UIAlertAction!) -> Void)?) {
+        self.addAction(UIAlertAction(title: title, style: .Cancel, handler: handler))
     }
     
-    extension UIViewController {
-        
-        public func showAlert(title : String, message : String) {
-            self.presentViewController(UIAlertController(title: title, message: message), animated: true, completion: nil)
-        }
-        
-        public func showAlert(title : String, error : NSError) {
-            self.presentViewController(UIAlertController(title: title, error: error), animated: true, completion: nil)
-        }
-        
+    public func addCancelButton() {
+        self.addCancelButton(handler: nil)
     }
     
-#endif
+    public func addCancelButton(title : String) {
+        self.addCancelButton(title, handler: nil)
+    }
+    
+    public convenience init(title : String, error : NSError) {
+        self.init(title: title, message: error.localizedDescription, preferredStyle: .Alert)
+        self.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
+    }
+    
+    public convenience init(title : String, message : String) {
+        self.init(title: title, message: message, preferredStyle: .Alert)
+        self.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
+    }
+    
+}
+
+extension UIViewController {
+    
+    public func showAlert(title : String, message : String) {
+        self.presentViewController(UIAlertController(title: title, message: message), animated: true, completion: nil)
+    }
+    
+    public func showAlert(title : String, error : NSError) {
+        self.presentViewController(UIAlertController(title: title, error: error), animated: true, completion: nil)
+    }
+    
+}
 
 
