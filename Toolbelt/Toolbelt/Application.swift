@@ -48,11 +48,8 @@ extension Application {
         }
     }
     
-    #if os(iOS)
-    
     public class func appSettingsURL() -> NSURL {
         return NSURL(string: UIApplicationOpenSettingsURLString)!
     }
     
-    #endif
 }
