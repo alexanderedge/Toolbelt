@@ -29,13 +29,12 @@ import Foundation
 extension String {
     
     public static func temporaryFilePathWithExtension(ext : String?) -> String {
-        // we must cast to NSString since stringByAppendingPathComponent is unavailable for String
-        let path : NSString = (NSTemporaryDirectory() as NSString).stringByAppendingPathComponent(NSUUID().UUIDString) as NSString
-        if let pathExtension = ext {
-            return path.stringByAppendingPathExtension(pathExtension)!
-        } else {
-            return path as String
+        let tmpDir = NSTemporaryDirectory() as NSString
+        let file = tmpDir.stringByAppendingPathComponent(NSUUID().UUIDString)
+        guard let ext = ext else {
+            return file
         }
+        return (file as NSString).stringByAppendingPathExtension(ext)!
     }
     
     public static func temporaryFilePath () -> String {
