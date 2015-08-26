@@ -72,7 +72,60 @@ import CoreGraphics
 #endif
 
 extension Image {
+    
     public class func imageWithColour(colour:Colour) -> Image {
         return imageWithColour(colour, size: CGSizeMake(1, 1))
     }
+    
+    public func resizedImage(size : CGSize, contentMode : UIViewContentMode = .ScaleAspectFill) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(size, true, 0)
+        // currently only scale to fill
+        
+        var rect = CGRect(origin: CGPointZero, size: size)
+        
+        switch contentMode {
+        case .ScaleAspectFill:
+            //rect = CGRect(origin: CGPointZero, size: size)
+            
+            let aspectRatio = self.size.width / self.size.height
+            
+            let newAspectRatio = size.width / size.height
+            
+            if fabs(aspectRatio - newAspectRatio) < CGFloat(FLT_EPSILON) {
+                // ratios are the same
+                break
+            }
+            
+            if newAspectRatio > aspectRatio {
+                // wider
+                let newHeight = size.width / aspectRatio
+                rect = CGRectInset(rect, 0, (size.height - newHeight) / 2)
+                
+            } else {
+                // new bounds is taller
+                let newWidth = size.height * aspectRatio
+                rect = CGRectInset(rect, (size.width - newWidth) / 2, 0)
+            }
+            
+            break
+        case .ScaleAspectFit:
+            
+            // not implemented yet
+            
+            rect = CGRect(origin: CGPointZero, size: size)
+            break
+        default:
+            break
+        }
+        
+        self.drawInRect(rect)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return img
+    }
+    
+    public func resizedImage(scale : CGFloat) -> UIImage {
+        return self.resizedImage(self.size.scaleBy(scale))
+    }
+    
 }
