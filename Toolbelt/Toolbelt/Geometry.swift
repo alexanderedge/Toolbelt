@@ -76,3 +76,20 @@ public func CGRectInsideRect(rect1 : CGRect, rect2 : CGRect) -> CGRect {
     
     return CGRectMake(xPos, yPos, width, height);
 }
+
+protocol Scalable {
+    func scaleBy(scale : CGFloat) -> Self
+}
+
+extension CGSize : Scalable {
+    
+    func scaleBy(scale: CGFloat) -> CGSize {
+        
+        guard scale > 0 else {
+            fatalError("negative scale factor encountered")
+        }
+        
+        return CGSizeMake(self.width * scale, self.height * scale)
+    }
+    
+}
