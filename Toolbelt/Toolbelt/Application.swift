@@ -48,6 +48,7 @@ extension Application {
         }
     }
     
+    @available(iOS 8.0,*)
     public class func appSettingsURL() -> NSURL {
         return NSURL(string: UIApplicationOpenSettingsURLString)!
     }
