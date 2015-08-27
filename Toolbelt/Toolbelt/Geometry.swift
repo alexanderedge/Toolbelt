@@ -44,7 +44,7 @@ extension CGRect {
 
 }
 
-public func CGRectMakeWithCenter(center : CGPoint, size : CGSize) -> CGRect {
+public func CGRectMake(center : CGPoint, size : CGSize) -> CGRect {
     return CGRect(center: center, size: size)
 }
 
