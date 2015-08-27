@@ -10,7 +10,7 @@ import Contacts // iOS 9
 import AddressBook // iOS 8
 
 public func NSLocalizedStringFromName(givenName : String?, familyName : String?) -> String {
-    if #available(iOS 9.0, *) {
+    if #available(iOS 9.0, OSX 10.11, *) {
         let contact = CNMutableContact()
         if let name = givenName {
             contact.givenName = name
