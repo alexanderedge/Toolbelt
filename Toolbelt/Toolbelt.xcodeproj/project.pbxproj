@@ -15,8 +15,6 @@
 		DE1AC5AE1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */; };
 		DE1AC5B21B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
 		DE1AC5B31B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
-		DE1AC5B41B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
-		DE1AC5B51B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
 		DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DE2F1C781AF503B70034B4F1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
@@ -600,7 +598,6 @@
 			files = (
 				DE6DF5321AFE460500567708 /* Application.swift in Sources */,
 				DE8881CE1AF515F300CD45F6 /* Filepath.swift in Sources */,
-				DE1AC5B41B74C3D600CB6F53 /* Contacts.swift in Sources */,
 				DE7F074A1AF5419F00B72E7C /* Security.swift in Sources */,
 				DE0D2FB61AF151F600E5BB45 /* AVURLAsset.swift in Sources */,
 				DE2F1C7B1AF506F10034B4F1 /* Geometry.swift in Sources */,
@@ -625,7 +622,6 @@
 				DE7F07521AF5498600B72E7C /* Security.swift in Sources */,
 				DEFB50CC1AF514D500DCAD5B /* AVPlayerItem.swift in Sources */,
 				DEB8A82B1AF536E1004AE3D6 /* Validation.swift in Sources */,
-				DE1AC5B51B74C3D600CB6F53 /* Contacts.swift in Sources */,
 				DE2F1C7D1AF506F30034B4F1 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
