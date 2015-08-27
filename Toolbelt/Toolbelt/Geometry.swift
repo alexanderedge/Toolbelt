@@ -34,11 +34,11 @@ extension CGRect {
         self.init(origin: CGPoint(x: originX, y: originY), size: size)
     }
     
-    public func center() -> CGPoint {
+    public var center : CGPoint {
         return CGPointMake(CGRectGetMidX(self), CGRectGetMidY(self))
     }
     
-    public func diagonal() -> CGFloat {
+    public var diagonal : CGFloat {
         return sqrt(pow(CGRectGetWidth(self),2) + pow(CGRectGetHeight(self),2))
     }
 
@@ -49,11 +49,11 @@ public func CGRectMakeWithCenter(center : CGPoint, size : CGSize) -> CGRect {
 }
 
 public func CGRectGetCenter(rect : CGRect) -> CGPoint {
-    return rect.center()
+    return rect.center
 }
 
 public func CGRectDiagonal(rect: CGRect) -> CGFloat {
-    return rect.diagonal()
+    return rect.diagonal
 }
 
 // return rect2 that fits inside rect1, resizing and moving if necessary
