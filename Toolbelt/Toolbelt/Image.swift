@@ -79,6 +79,7 @@ extension Image {
     
     
     #if os(iOS)
+    
     public func resizedImage(size : CGSize, contentMode : UIViewContentMode = .ScaleAspectFill) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, true, 0)
         // currently only scale to fill
@@ -126,8 +127,6 @@ extension Image {
         return img
     }
     
-    public func resizedImage(scale : CGFloat) -> UIImage {
-        return self.resizedImage(self.size.scaleBy(scale))
-    }
+    
     #endif
 }
