@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0B598B1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */; settings = {ASSET_TAGS = (); }; };
+		DE0B598C1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */; settings = {ASSET_TAGS = (); }; };
 		DE0D2FB61AF151F600E5BB45 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
 		DE0D2FB71AF151F700E5BB45 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
 		DE1AC5A91B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A71B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift */; };
@@ -91,6 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureRecogniser.swift; sourceTree = "<group>"; };
 		DE1AC5A71B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Authorisation.swift"; sourceTree = "<group>"; };
 		DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Hardware.swift"; sourceTree = "<group>"; };
 		DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				DE3540A91AEE9C5700AC95FE /* Toolbelt.h */,
+				DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */,
 				DE292C121B8FBDC800ACCA02 /* Foundation.swift */,
 				DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */,
 				DE7F07481AF5411900B72E7C /* Security.swift */,
@@ -571,6 +575,7 @@
 				DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */,
 				DE292C181B8FC3C900ACCA02 /* UIScrollView.swift in Sources */,
 				DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */,
+				DE0B598B1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */,
 				DE1AC5B21B74C3D600CB6F53 /* Contacts.swift in Sources */,
 				DEFB50C41AF512D100DCAD5B /* ViewController.swift in Sources */,
 				DE7F07491AF5411900B72E7C /* Security.swift in Sources */,
@@ -600,6 +605,7 @@
 				DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */,
 				DEA28F671AEEB199004DCD64 /* Colour.swift in Sources */,
 				DEA28F3B1AEEB16E004DCD64 /* Toolbelt-iOSTests.swift in Sources */,
+				DE0B598C1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */,
 				DE877BF71AFE352D00FAA33E /* ToolbeltTestsCommon.swift in Sources */,
 				DE1AC5AA1B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift in Sources */,
 				DE8881D01AF515F400CD45F6 /* Filepath.swift in Sources */,
