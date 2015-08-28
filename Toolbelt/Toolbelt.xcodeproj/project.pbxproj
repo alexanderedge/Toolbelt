@@ -15,6 +15,14 @@
 		DE1AC5AE1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */; };
 		DE1AC5B21B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
 		DE1AC5B31B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
+		DE292C131B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; settings = {ASSET_TAGS = (); }; };
+		DE292C141B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; settings = {ASSET_TAGS = (); }; };
+		DE292C151B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; settings = {ASSET_TAGS = (); }; };
+		DE292C161B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; settings = {ASSET_TAGS = (); }; };
+		DE292C181B8FC3C900ACCA02 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */; settings = {ASSET_TAGS = (); }; };
+		DE292C191B8FC3C900ACCA02 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */; settings = {ASSET_TAGS = (); }; };
+		DE292C1C1B8FC52B00ACCA02 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; settings = {ASSET_TAGS = (); }; };
+		DE292C1D1B8FC52B00ACCA02 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; settings = {ASSET_TAGS = (); }; };
 		DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DE2F1C781AF503B70034B4F1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
@@ -86,6 +94,8 @@
 		DE1AC5A71B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Authorisation.swift"; sourceTree = "<group>"; };
 		DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Hardware.swift"; sourceTree = "<group>"; };
 		DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		DE292C121B8FBDC800ACCA02 /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		DE2F1C791AF505E70034B4F1 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		DE2F1C7E1AF508640034B4F1 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		DE2F1C821AF509DA0034B4F1 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
@@ -197,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				DE3540A91AEE9C5700AC95FE /* Toolbelt.h */,
+				DE292C121B8FBDC800ACCA02 /* Foundation.swift */,
+				DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */,
 				DE7F07481AF5411900B72E7C /* Security.swift */,
 				DE3540C41AEE9DA300AC95FE /* Colour.swift */,
 				DE4184251AF5003600C24ED3 /* Image.swift */,
@@ -557,6 +569,7 @@
 				DEA28F651AEEB195004DCD64 /* AVURLAsset.swift in Sources */,
 				DEFB50C91AF513E800DCAD5B /* Filepath.swift in Sources */,
 				DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */,
+				DE292C181B8FC3C900ACCA02 /* UIScrollView.swift in Sources */,
 				DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */,
 				DE1AC5B21B74C3D600CB6F53 /* Contacts.swift in Sources */,
 				DEFB50C41AF512D100DCAD5B /* ViewController.swift in Sources */,
@@ -564,6 +577,7 @@
 				DE4184261AF5003600C24ED3 /* Image.swift in Sources */,
 				DEB8A8281AF535B4004AE3D6 /* Validation.swift in Sources */,
 				DE1AC5A91B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift in Sources */,
+				DE292C131B8FBDC800ACCA02 /* Foundation.swift in Sources */,
 				DE1AC5AD1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */,
 				DEA28F691AEEB19A004DCD64 /* Colour.swift in Sources */,
 			);
@@ -576,11 +590,13 @@
 				DE8881D11AF517EC00CD45F6 /* Application.swift in Sources */,
 				DEFB50C51AF512E700DCAD5B /* ViewController.swift in Sources */,
 				DE1AC5B31B74C3D600CB6F53 /* Contacts.swift in Sources */,
+				DE292C191B8FC3C900ACCA02 /* UIScrollView.swift in Sources */,
 				DEB8A82A1AF536E1004AE3D6 /* Validation.swift in Sources */,
 				DEA28F641AEEB195004DCD64 /* AVURLAsset.swift in Sources */,
 				DEFB50CA1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
 				DE1AC5AE1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */,
 				DE7F07531AF5498700B72E7C /* Security.swift in Sources */,
+				DE292C141B8FBDC800ACCA02 /* Foundation.swift in Sources */,
 				DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */,
 				DEA28F671AEEB199004DCD64 /* Colour.swift in Sources */,
 				DEA28F3B1AEEB16E004DCD64 /* Toolbelt-iOSTests.swift in Sources */,
@@ -598,11 +614,13 @@
 			files = (
 				DE6DF5321AFE460500567708 /* Application.swift in Sources */,
 				DE8881CE1AF515F300CD45F6 /* Filepath.swift in Sources */,
+				DE292C151B8FBDC800ACCA02 /* Foundation.swift in Sources */,
 				DE7F074A1AF5419F00B72E7C /* Security.swift in Sources */,
 				DE0D2FB61AF151F600E5BB45 /* AVURLAsset.swift in Sources */,
 				DE2F1C7B1AF506F10034B4F1 /* Geometry.swift in Sources */,
 				DEFB50CB1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
 				DED4B26C1AF5029D00B84CB0 /* Image.swift in Sources */,
+				DE292C1C1B8FC52B00ACCA02 /* Contacts.swift in Sources */,
 				DEA28F681AEEB19A004DCD64 /* Colour.swift in Sources */,
 				DEB8A8291AF536E0004AE3D6 /* Validation.swift in Sources */,
 			);
@@ -612,11 +630,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE292C161B8FBDC800ACCA02 /* Foundation.swift in Sources */,
 				DE8881CF1AF515F300CD45F6 /* Filepath.swift in Sources */,
 				DEA28F661AEEB198004DCD64 /* Colour.swift in Sources */,
 				DE6DF5331AFE460500567708 /* Application.swift in Sources */,
 				DE2F1C781AF503B70034B4F1 /* Image.swift in Sources */,
 				DEA28F591AEEB183004DCD64 /* Toolbelt-MacTests.swift in Sources */,
+				DE292C1D1B8FC52B00ACCA02 /* Contacts.swift in Sources */,
 				DE0D2FB71AF151F700E5BB45 /* AVURLAsset.swift in Sources */,
 				DE877BF81AFE352F00FAA33E /* ToolbeltTestsCommon.swift in Sources */,
 				DE7F07521AF5498600B72E7C /* Security.swift in Sources */,
