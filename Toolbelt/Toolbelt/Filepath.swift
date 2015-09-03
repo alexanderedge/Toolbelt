@@ -41,6 +41,14 @@ extension String {
         return temporaryFilePathWithExtension(nil)
     }
     
+    public func stringByAppendingPathComponent(component : String) -> String {
+        return (self as NSString).stringByAppendingPathComponent(component) as String
+    }
+    
+    public func stringByAppendingPathExtension(ext : String) -> String? {
+        return (self as NSString).stringByAppendingPathExtension(ext)
+    }
+    
 }
 
 extension NSURL {
