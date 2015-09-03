@@ -66,6 +66,7 @@
 		DEB8A82A1AF536E1004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
 		DEB8A82B1AF536E1004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
 		DED4B26C1AF5029D00B84CB0 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
+		DED5D60C1B987C7900C6304F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D60B1B987C7900C6304F /* UITableView.swift */; settings = {ASSET_TAGS = (); }; };
 		DEFB50C41AF512D100DCAD5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C31AF512D100DCAD5B /* ViewController.swift */; };
 		DEFB50C51AF512E700DCAD5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C31AF512D100DCAD5B /* ViewController.swift */; };
 		DEFB50C71AF513A600DCAD5B /* AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */; };
@@ -140,6 +141,7 @@
 		DEA28F571AEEB183004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F581AEEB183004DCD64 /* Toolbelt-MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toolbelt-MacTests.swift"; sourceTree = "<group>"; };
 		DEB8A8271AF535B4004AE3D6 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		DED5D60B1B987C7900C6304F /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		DEFB50C31AF512D100DCAD5B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerItem.swift; sourceTree = "<group>"; };
 		DEFB50C81AF513E800DCAD5B /* Filepath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filepath.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */,
 				DE292C121B8FBDC800ACCA02 /* Foundation.swift */,
 				DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */,
+				DED5D60B1B987C7900C6304F /* UITableView.swift */,
 				DE7F07481AF5411900B72E7C /* Security.swift */,
 				DE3540C41AEE9DA300AC95FE /* Colour.swift */,
 				DE4184251AF5003600C24ED3 /* Image.swift */,
@@ -573,6 +576,7 @@
 				DEA28F651AEEB195004DCD64 /* AVURLAsset.swift in Sources */,
 				DEFB50C91AF513E800DCAD5B /* Filepath.swift in Sources */,
 				DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */,
+				DED5D60C1B987C7900C6304F /* UITableView.swift in Sources */,
 				DE292C181B8FC3C900ACCA02 /* UIScrollView.swift in Sources */,
 				DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */,
 				DE0B598B1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */,
