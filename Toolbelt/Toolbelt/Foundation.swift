@@ -38,7 +38,15 @@ extension CollectionType {
     }
 }
 
-extension CollectionType where Index == Int, Generator.Element : Equatable {
+extension CollectionType where Self.Generator.Element : Equatable {
+    public func except(element : Self.Generator.Element) -> [Self.Generator.Element] {
+        return self.filter({ (obj) -> Bool in
+            return obj != element
+        })
+    }
+}
+
+extension CollectionType where Index == Int, Self.Generator.Element : Equatable {
     
     public func any(count : Int) -> [Self.Generator.Element] {
         guard !self.isEmpty else {
