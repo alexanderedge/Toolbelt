@@ -83,17 +83,5 @@ extension Dictionary {
 extension NSDate : Comparable {}
 
 public func <(lhs : NSDate, rhs : NSDate) -> Bool {
-    return [.OrderedAscending].contains(lhs.compare(rhs))
-}
-
-public func <=(lhs : NSDate, rhs : NSDate) -> Bool {
-    return [.OrderedAscending,.OrderedSame].contains(lhs.compare(rhs))
-}
-
-public func >=(lhs : NSDate, rhs : NSDate) -> Bool {
-    return [.OrderedDescending,.OrderedSame].contains(lhs.compare(rhs))
-}
-
-public func >(lhs : NSDate, rhs : NSDate) -> Bool {
-    return [.OrderedDescending].contains(lhs.compare(rhs))
+    return lhs.compare(rhs) == .OrderedAscending
 }
