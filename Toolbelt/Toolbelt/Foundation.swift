@@ -72,3 +72,10 @@ extension CollectionType where Index == Int, Generator.Element : Equatable {
     
 }
 
+extension Dictionary {
+    public mutating func merge<K, V>(dict: [K: V]){
+        for (k, v) in dict {
+            self.updateValue(v as! Value, forKey: k as! Key)
+        }
+    }
+}
