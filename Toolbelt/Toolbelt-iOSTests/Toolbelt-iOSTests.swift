@@ -9,6 +9,7 @@
 import UIKit
 import XCTest
 
+@testable import Toolbelt
 class Toolbelt_iOSTests: XCTestCase {
     
     override func setUp() {

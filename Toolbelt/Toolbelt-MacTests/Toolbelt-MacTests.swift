@@ -9,6 +9,7 @@
 import Cocoa
 import XCTest
 
+@testable import Toolbelt
 class Toolbelt_MacTests: XCTestCase {
     
     override func setUp() {

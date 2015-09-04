@@ -27,6 +27,7 @@
 import XCTest
 import CoreGraphics
 
+@testable import Toolbelt
 class ToolbeltTestsCommon: XCTestCase {
     
     override func setUp() {

@@ -8,72 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		DE0B598B1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */; settings = {ASSET_TAGS = (); }; };
-		DE0B598C1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */; settings = {ASSET_TAGS = (); }; };
-		DE0D2FB61AF151F600E5BB45 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
-		DE0D2FB71AF151F700E5BB45 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
 		DE1AC5A91B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A71B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift */; };
-		DE1AC5AA1B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A71B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift */; };
 		DE1AC5AD1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */; };
-		DE1AC5AE1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */; };
 		DE1AC5B21B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
-		DE1AC5B31B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
 		DE292C131B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; settings = {ASSET_TAGS = (); }; };
-		DE292C141B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; settings = {ASSET_TAGS = (); }; };
-		DE292C151B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; settings = {ASSET_TAGS = (); }; };
-		DE292C161B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; settings = {ASSET_TAGS = (); }; };
 		DE292C181B8FC3C900ACCA02 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */; settings = {ASSET_TAGS = (); }; };
-		DE292C191B8FC3C900ACCA02 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */; settings = {ASSET_TAGS = (); }; };
-		DE292C1C1B8FC52B00ACCA02 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; settings = {ASSET_TAGS = (); }; };
-		DE292C1D1B8FC52B00ACCA02 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; settings = {ASSET_TAGS = (); }; };
-		DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
-		DE2F1C781AF503B70034B4F1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
-		DE2F1C7B1AF506F10034B4F1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
-		DE2F1C7C1AF506F20034B4F1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
-		DE2F1C7D1AF506F30034B4F1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
 		DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C7E1AF508640034B4F1 /* Alert.swift */; };
 		DE2F1C831AF509DA0034B4F1 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
 		DE4184261AF5003600C24ED3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
-		DE6DF5321AFE460500567708 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
-		DE6DF5331AFE460500567708 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
 		DE7F07441AF5406A00B72E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7F07471AF5406A00B72E7C /* Localizable.strings */; };
 		DE7F07451AF5406A00B72E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7F07471AF5406A00B72E7C /* Localizable.strings */; };
 		DE7F07491AF5411900B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
-		DE7F074A1AF5419F00B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
-		DE7F07521AF5498600B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
-		DE7F07531AF5498700B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
 		DE877BF71AFE352D00FAA33E /* ToolbeltTestsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */; };
 		DE877BF81AFE352F00FAA33E /* ToolbeltTestsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */; };
 		DE877BF91AFE388200FAA33E /* Toolbelt.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3540A91AEE9C5700AC95FE /* Toolbelt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE877BFB1AFE38D500FAA33E /* Toolbelt.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3540A91AEE9C5700AC95FE /* Toolbelt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE8881CE1AF515F300CD45F6 /* Filepath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Filepath.swift */; };
-		DE8881CF1AF515F300CD45F6 /* Filepath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Filepath.swift */; };
-		DE8881D01AF515F400CD45F6 /* Filepath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Filepath.swift */; };
-		DE8881D11AF517EC00CD45F6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
-		DE8881D21AF517F200CD45F6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C7E1AF508640034B4F1 /* Alert.swift */; };
 		DEA28F341AEEB16E004DCD64 /* Toolbelt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA28F291AEEB16E004DCD64 /* Toolbelt.framework */; };
 		DEA28F3B1AEEB16E004DCD64 /* Toolbelt-iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA28F3A1AEEB16E004DCD64 /* Toolbelt-iOSTests.swift */; };
 		DEA28F521AEEB183004DCD64 /* Toolbelt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA28F471AEEB183004DCD64 /* Toolbelt.framework */; };
 		DEA28F591AEEB183004DCD64 /* Toolbelt-MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA28F581AEEB183004DCD64 /* Toolbelt-MacTests.swift */; };
-		DEA28F641AEEB195004DCD64 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
 		DEA28F651AEEB195004DCD64 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
-		DEA28F661AEEB198004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
-		DEA28F671AEEB199004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
-		DEA28F681AEEB19A004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
 		DEA28F691AEEB19A004DCD64 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
 		DEB8A8281AF535B4004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
-		DEB8A8291AF536E0004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
-		DEB8A82A1AF536E1004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
-		DEB8A82B1AF536E1004AE3D6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
-		DED4B26C1AF5029D00B84CB0 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
+		DEC1BDC51B99B91A00C13455 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1BDC41B99B91A00C13455 /* DateTests.swift */; settings = {ASSET_TAGS = (); }; };
+		DEC1BDC81B99BC0C00C13455 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; };
+		DEC1BDCB1B99BC0C00C13455 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
+		DEC1BDCC1B99BC0C00C13455 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C41AEE9DA300AC95FE /* Colour.swift */; };
+		DEC1BDCD1B99BC0C00C13455 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
+		DEC1BDCE1B99BC0C00C13455 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
+		DEC1BDD01B99BC0C00C13455 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
+		DEC1BDD21B99BC0C00C13455 /* Filepath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Filepath.swift */; };
+		DEC1BDD31B99BC0C00C13455 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
+		DEC1BDD41B99BC0C00C13455 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
+		DEC1BDD61B99BC0C00C13455 /* AVCaptureDevice+Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */; };
+		DEC1BDD71B99BC0C00C13455 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
+		DEC1BDD81B99BC0C00C13455 /* AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */; };
+		DEC1BDD91B99C9D800C13455 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1BDC41B99B91A00C13455 /* DateTests.swift */; };
 		DED5D60C1B987C7900C6304F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D60B1B987C7900C6304F /* UITableView.swift */; settings = {ASSET_TAGS = (); }; };
 		DEFB50C41AF512D100DCAD5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C31AF512D100DCAD5B /* ViewController.swift */; };
-		DEFB50C51AF512E700DCAD5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C31AF512D100DCAD5B /* ViewController.swift */; };
 		DEFB50C71AF513A600DCAD5B /* AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */; };
 		DEFB50C91AF513E800DCAD5B /* Filepath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Filepath.swift */; };
-		DEFB50CA1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */; };
-		DEFB50CB1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */; };
-		DEFB50CC1AF514D500DCAD5B /* AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +116,7 @@
 		DEA28F571AEEB183004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F581AEEB183004DCD64 /* Toolbelt-MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toolbelt-MacTests.swift"; sourceTree = "<group>"; };
 		DEB8A8271AF535B4004AE3D6 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		DEC1BDC41B99B91A00C13455 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		DED5D60B1B987C7900C6304F /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		DEFB50C31AF512D100DCAD5B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerItem.swift; sourceTree = "<group>"; };
@@ -256,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */,
+				DEC1BDC41B99B91A00C13455 /* DateTests.swift */,
 			);
 			path = ToolbeltTests;
 			sourceTree = "<group>";
@@ -596,25 +573,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE8881D11AF517EC00CD45F6 /* Application.swift in Sources */,
-				DEFB50C51AF512E700DCAD5B /* ViewController.swift in Sources */,
-				DE1AC5B31B74C3D600CB6F53 /* Contacts.swift in Sources */,
-				DE292C191B8FC3C900ACCA02 /* UIScrollView.swift in Sources */,
-				DEB8A82A1AF536E1004AE3D6 /* Validation.swift in Sources */,
-				DEA28F641AEEB195004DCD64 /* AVURLAsset.swift in Sources */,
-				DEFB50CA1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
-				DE1AC5AE1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */,
-				DE7F07531AF5498700B72E7C /* Security.swift in Sources */,
-				DE292C141B8FBDC800ACCA02 /* Foundation.swift in Sources */,
-				DE2F1C771AF503B60034B4F1 /* Image.swift in Sources */,
-				DEA28F671AEEB199004DCD64 /* Colour.swift in Sources */,
 				DEA28F3B1AEEB16E004DCD64 /* Toolbelt-iOSTests.swift in Sources */,
-				DE0B598C1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */,
 				DE877BF71AFE352D00FAA33E /* ToolbeltTestsCommon.swift in Sources */,
-				DE1AC5AA1B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift in Sources */,
-				DE8881D01AF515F400CD45F6 /* Filepath.swift in Sources */,
-				DE8881D21AF517F200CD45F6 /* Alert.swift in Sources */,
-				DE2F1C7C1AF506F20034B4F1 /* Geometry.swift in Sources */,
+				DEC1BDC51B99B91A00C13455 /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,17 +583,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE6DF5321AFE460500567708 /* Application.swift in Sources */,
-				DE8881CE1AF515F300CD45F6 /* Filepath.swift in Sources */,
-				DE292C151B8FBDC800ACCA02 /* Foundation.swift in Sources */,
-				DE7F074A1AF5419F00B72E7C /* Security.swift in Sources */,
-				DE0D2FB61AF151F600E5BB45 /* AVURLAsset.swift in Sources */,
-				DE2F1C7B1AF506F10034B4F1 /* Geometry.swift in Sources */,
-				DEFB50CB1AF514D400DCAD5B /* AVPlayerItem.swift in Sources */,
-				DED4B26C1AF5029D00B84CB0 /* Image.swift in Sources */,
-				DE292C1C1B8FC52B00ACCA02 /* Contacts.swift in Sources */,
-				DEA28F681AEEB19A004DCD64 /* Colour.swift in Sources */,
-				DEB8A8291AF536E0004AE3D6 /* Validation.swift in Sources */,
+				DEC1BDC81B99BC0C00C13455 /* Foundation.swift in Sources */,
+				DEC1BDCB1B99BC0C00C13455 /* Security.swift in Sources */,
+				DEC1BDCC1B99BC0C00C13455 /* Colour.swift in Sources */,
+				DEC1BDCD1B99BC0C00C13455 /* Image.swift in Sources */,
+				DEC1BDCE1B99BC0C00C13455 /* Geometry.swift in Sources */,
+				DEC1BDD01B99BC0C00C13455 /* Application.swift in Sources */,
+				DEC1BDD21B99BC0C00C13455 /* Filepath.swift in Sources */,
+				DEC1BDD31B99BC0C00C13455 /* Validation.swift in Sources */,
+				DEC1BDD41B99BC0C00C13455 /* Contacts.swift in Sources */,
+				DEC1BDD61B99BC0C00C13455 /* AVCaptureDevice+Hardware.swift in Sources */,
+				DEC1BDD71B99BC0C00C13455 /* AVURLAsset.swift in Sources */,
+				DEC1BDD81B99BC0C00C13455 /* AVPlayerItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,19 +602,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE292C161B8FBDC800ACCA02 /* Foundation.swift in Sources */,
-				DE8881CF1AF515F300CD45F6 /* Filepath.swift in Sources */,
-				DEA28F661AEEB198004DCD64 /* Colour.swift in Sources */,
-				DE6DF5331AFE460500567708 /* Application.swift in Sources */,
-				DE2F1C781AF503B70034B4F1 /* Image.swift in Sources */,
+				DEC1BDD91B99C9D800C13455 /* DateTests.swift in Sources */,
 				DEA28F591AEEB183004DCD64 /* Toolbelt-MacTests.swift in Sources */,
-				DE292C1D1B8FC52B00ACCA02 /* Contacts.swift in Sources */,
-				DE0D2FB71AF151F700E5BB45 /* AVURLAsset.swift in Sources */,
 				DE877BF81AFE352F00FAA33E /* ToolbeltTestsCommon.swift in Sources */,
-				DE7F07521AF5498600B72E7C /* Security.swift in Sources */,
-				DEFB50CC1AF514D500DCAD5B /* AVPlayerItem.swift in Sources */,
-				DEB8A82B1AF536E1004AE3D6 /* Validation.swift in Sources */,
-				DE2F1C7D1AF506F30034B4F1 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,7 +655,6 @@
 				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -742,7 +693,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -760,304 +710,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		DE877C1B1AFE3DC000FAA33E /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C051AFE3D4500FAA33E /* Test.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = Toolbelt;
-				SWIFT_INCLUDE_PATHS = "${SOURCE_ROOT}/Toolbelt/CommonCrypto";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Toolbelt-Swift.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Test;
-		};
-		DE877C1C1AFE3DC000FAA33E /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C131AFE3D4500FAA33E /* iOS-Framework.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Test;
-		};
-		DE877C1D1AFE3DC000FAA33E /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C111AFE3D4500FAA33E /* iOS-Application.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "Toolbelt-iOSTests";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Test;
-		};
-		DE877C1E1AFE3DC000FAA33E /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C191AFE3D4500FAA33E /* Mac-Framework.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Test;
-		};
-		DE877C1F1AFE3DC000FAA33E /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C161AFE3D4500FAA33E /* Mac-Application.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Test;
-		};
-		DE877C201AFE3DCC00FAA33E /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C031AFE3D4500FAA33E /* Profile.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "${TARGET_NAME}/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = Toolbelt;
-				SWIFT_INCLUDE_PATHS = "${SOURCE_ROOT}/Toolbelt/CommonCrypto";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Toolbelt-Swift.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Profile;
-		};
-		DE877C211AFE3DCC00FAA33E /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C131AFE3D4500FAA33E /* iOS-Framework.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Profile;
-		};
-		DE877C221AFE3DCC00FAA33E /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C111AFE3D4500FAA33E /* iOS-Application.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "Toolbelt-iOSTests";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Profile;
-		};
-		DE877C231AFE3DCC00FAA33E /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C191AFE3D4500FAA33E /* Mac-Framework.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Profile;
-		};
-		DE877C241AFE3DCC00FAA33E /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE877C161AFE3D4500FAA33E /* Mac-Application.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Profile;
 		};
 		DEA28F3D1AEEB16E004DCD64 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1297,8 +949,6 @@
 			buildConfigurations = (
 				DE3540B81AEE9C5700AC95FE /* Debug */,
 				DE3540B91AEE9C5700AC95FE /* Release */,
-				DE877C201AFE3DCC00FAA33E /* Profile */,
-				DE877C1B1AFE3DC000FAA33E /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1308,8 +958,6 @@
 			buildConfigurations = (
 				DEA28F3D1AEEB16E004DCD64 /* Debug */,
 				DEA28F3E1AEEB16E004DCD64 /* Release */,
-				DE877C211AFE3DCC00FAA33E /* Profile */,
-				DE877C1C1AFE3DC000FAA33E /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1319,8 +967,6 @@
 			buildConfigurations = (
 				DEA28F401AEEB16E004DCD64 /* Debug */,
 				DEA28F411AEEB16E004DCD64 /* Release */,
-				DE877C221AFE3DCC00FAA33E /* Profile */,
-				DE877C1D1AFE3DC000FAA33E /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1330,8 +976,6 @@
 			buildConfigurations = (
 				DEA28F5B1AEEB183004DCD64 /* Debug */,
 				DEA28F5C1AEEB183004DCD64 /* Release */,
-				DE877C231AFE3DCC00FAA33E /* Profile */,
-				DE877C1E1AFE3DC000FAA33E /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1341,8 +985,6 @@
 			buildConfigurations = (
 				DEA28F5E1AEEB183004DCD64 /* Debug */,
 				DEA28F5F1AEEB183004DCD64 /* Release */,
-				DE877C241AFE3DCC00FAA33E /* Profile */,
-				DE877C1F1AFE3DC000FAA33E /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

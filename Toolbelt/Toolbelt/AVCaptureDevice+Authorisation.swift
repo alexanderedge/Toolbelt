@@ -17,7 +17,7 @@ extension AVCaptureDevice {
     public class func checkAuthorisationStatusForMicrophone(completion : ((Bool) -> Void)?) {
         self.checkAuthorisationStatusForMediaType(AVMediaTypeAudio, completion: completion)
     }
-    
+     
     public class func checkAuthorisationStatusForMediaType(type : String, completion : ((Bool) -> Void)?) {
         let status = AVCaptureDevice.authorizationStatusForMediaType(type)
         
