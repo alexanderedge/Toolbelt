@@ -25,6 +25,7 @@
 //  THE SOFTWARE.
 
 import CoreGraphics
+import AVFoundation
 
 #if os(OSX)
     import AppKit.NSImage
@@ -82,7 +83,6 @@ extension Image {
     
     public func resizedImage(size : CGSize, contentMode : UIViewContentMode = .ScaleAspectFill) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, true, 0)
-        // currently only scale to fill
         
         var rect = CGRect(origin: CGPointZero, size: size)
         
@@ -112,10 +112,7 @@ extension Image {
             
             break
         case .ScaleAspectFit:
-            
-            // not implemented yet
-            
-            rect = CGRect(origin: CGPointZero, size: size)
+            rect = AVMakeRectWithAspectRatioInsideRect(self.size, rect)
             break
         default:
             break
