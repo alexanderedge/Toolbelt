@@ -29,7 +29,7 @@ import CommonCrypto
 
 extension NSData {
     
-    public func hexadecimalString () -> String {
+    public var hexadecimalString : String {
         var str = String()
         var bytes = [UInt8](count: self.length, repeatedValue: 0)
         self.getBytes(&bytes, length: self.length)
