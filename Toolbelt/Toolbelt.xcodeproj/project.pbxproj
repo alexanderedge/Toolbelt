@@ -11,7 +11,8 @@
 		DE1AC5A91B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A71B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift */; };
 		DE1AC5AD1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */; };
 		DE1AC5B21B74C3D600CB6F53 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
-		DE1E73EE1BF559B600A2D280 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1E73D31BF5597400A2D280 /* CommonCrypto.framework */; };
+		DE1E73EE1BF559B600A2D280 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1E73D31BF5597400A2D280 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DE1E740A1BF55D8900A2D280 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1E73FE1BF55B0900A2D280 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DE292C131B8FBDC800ACCA02 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C121B8FBDC800ACCA02 /* Foundation.swift */; };
 		DE292C181B8FC3C900ACCA02 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */; };
 		DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C791AF505E70034B4F1 /* Geometry.swift */; };
@@ -59,6 +60,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = DE1E73D21BF5597400A2D280;
 			remoteInfo = "CommonCrypto-iOS";
+		};
+		DE1E740B1BF55D9800A2D280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE35409B1AEE9C5700AC95FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE1E73FD1BF55B0900A2D280;
+			remoteInfo = "CommonCrypto-Mac";
 		};
 		DEA28F351AEEB16E004DCD64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -123,12 +131,10 @@
 		DE877C191AFE3D4500FAA33E /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
 		DE877C1A1AFE3D4500FAA33E /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		DEA28F291AEEB16E004DCD64 /* Toolbelt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toolbelt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEA28F2C1AEEB16E004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F331AEEB16E004DCD64 /* Toolbelt-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toolbelt-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA28F391AEEB16E004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F3A1AEEB16E004DCD64 /* Toolbelt-iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toolbelt-iOSTests.swift"; sourceTree = "<group>"; };
 		DEA28F471AEEB183004DCD64 /* Toolbelt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toolbelt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEA28F4A1AEEB183004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F511AEEB183004DCD64 /* Toolbelt-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toolbelt-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA28F571AEEB183004DCD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA28F581AEEB183004DCD64 /* Toolbelt-MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toolbelt-MacTests.swift"; sourceTree = "<group>"; };
@@ -175,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1E740A1BF55D8900A2D280 /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +218,7 @@
 				DE1E73F01BF55A4A00A2D280 /* CommonCrypto */,
 				DE3540A61AEE9C5700AC95FE /* Toolbelt */,
 				DE877BF41AFE34E500FAA33E /* ToolbeltTests */,
-				DEA28F2A1AEEB16E004DCD64 /* Toolbelt_iOS */,
 				DEA28F371AEEB16E004DCD64 /* Toolbelt_iOSTests */,
-				DEA28F481AEEB183004DCD64 /* Toolbelt-Mac */,
 				DEA28F551AEEB183004DCD64 /* Toolbelt-MacTests */,
 				DE3540A51AEE9C5700AC95FE /* Products */,
 			);
@@ -353,23 +358,6 @@
 			path = "../Carthage/Checkouts/xcconfigs/Mac OS X";
 			sourceTree = "<group>";
 		};
-		DEA28F2A1AEEB16E004DCD64 /* Toolbelt_iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DEA28F2B1AEEB16E004DCD64 /* Supporting Files */,
-			);
-			name = Toolbelt_iOS;
-			path = "Toolbelt-iOS";
-			sourceTree = "<group>";
-		};
-		DEA28F2B1AEEB16E004DCD64 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DEA28F2C1AEEB16E004DCD64 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		DEA28F371AEEB16E004DCD64 /* Toolbelt_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,22 +372,6 @@
 			isa = PBXGroup;
 			children = (
 				DEA28F391AEEB16E004DCD64 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DEA28F481AEEB183004DCD64 /* Toolbelt-Mac */ = {
-			isa = PBXGroup;
-			children = (
-				DEA28F491AEEB183004DCD64 /* Supporting Files */,
-			);
-			path = "Toolbelt-Mac";
-			sourceTree = "<group>";
-		};
-		DEA28F491AEEB183004DCD64 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DEA28F4A1AEEB183004DCD64 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -542,6 +514,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DE1E740C1BF55D9800A2D280 /* PBXTargetDependency */,
 			);
 			name = "Toolbelt-Mac";
 			productName = "Toolbelt-Mac";
@@ -752,6 +725,11 @@
 			target = DE1E73D21BF5597400A2D280 /* CommonCrypto-iOS */;
 			targetProxy = DE1E73F51BF55AC600A2D280 /* PBXContainerItemProxy */;
 		};
+		DE1E740C1BF55D9800A2D280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE1E73FD1BF55B0900A2D280 /* CommonCrypto-Mac */;
+			targetProxy = DE1E740B1BF55D9800A2D280 /* PBXContainerItemProxy */;
+		};
 		DEA28F361AEEB16E004DCD64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DEA28F281AEEB16E004DCD64 /* Toolbelt-iOS */;
@@ -801,7 +779,6 @@
 				);
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.cmpny.CommonCrypto;
@@ -831,7 +808,6 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = io.cmpny.CommonCrypto;
@@ -845,13 +821,13 @@
 		};
 		DE1E74041BF55B0900A2D280 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE28EC9A1BF50588008F4DF1 /* CommonCrypto.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -870,9 +846,8 @@
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.cmpny.CommonCrypto-Mac";
+				PRODUCT_BUNDLE_IDENTIFIER = io.cmpny.CommonCrypto;
 				PRODUCT_NAME = CommonCrypto;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -881,13 +856,13 @@
 		};
 		DE1E74051BF55B0900A2D280 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE28EC9A1BF50588008F4DF1 /* CommonCrypto.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -900,9 +875,8 @@
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.cmpny.CommonCrypto-Mac";
+				PRODUCT_BUNDLE_IDENTIFIER = io.cmpny.CommonCrypto;
 				PRODUCT_NAME = CommonCrypto;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -989,6 +963,7 @@
 			baseConfigurationReference = DE877C131AFE3D4500FAA33E /* iOS-Framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1003,6 +978,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Toolbelt/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1019,6 +995,7 @@
 			baseConfigurationReference = DE877C131AFE3D4500FAA33E /* iOS-Framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1032,6 +1009,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Toolbelt/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1105,6 +1083,7 @@
 			baseConfigurationReference = DE877C191AFE3D4500FAA33E /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1120,6 +1099,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Toolbelt/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1135,6 +1115,7 @@
 			baseConfigurationReference = DE877C191AFE3D4500FAA33E /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1148,6 +1129,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Toolbelt/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1224,6 +1206,7 @@
 				DE1E73D91BF5597400A2D280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE1E74031BF55B0900A2D280 /* Build configuration list for PBXNativeTarget "CommonCrypto-Mac" */ = {
 			isa = XCConfigurationList;
@@ -1232,6 +1215,7 @@
 				DE1E74051BF55B0900A2D280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE35409E1AEE9C5700AC95FE /* Build configuration list for PBXProject "Toolbelt" */ = {
 			isa = XCConfigurationList;
