@@ -110,6 +110,7 @@
 		DE3540CA1AEE9EA100AC95FE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE3540CB1AEE9EA100AC95FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DE4184251AF5003600C24ED3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		DE684ED71BF79D3000A395A9 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
 		DE7F07461AF5406A00B72E7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DE7F07481AF5411900B72E7C /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbeltTestsCommon.swift; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 		DE35409A1AEE9C5700AC95FE = {
 			isa = PBXGroup;
 			children = (
+				DE684ED71BF79D3000A395A9 /* Cartfile */,
 				DE28ECA81BF507C4008F4DF1 /* Cartfile.private */,
 				DE28ECA91BF507C4008F4DF1 /* Cartfile.resolved */,
 				DE3540CA1AEE9EA100AC95FE /* LICENSE */,
