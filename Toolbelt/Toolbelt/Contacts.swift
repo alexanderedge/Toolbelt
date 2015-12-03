@@ -45,3 +45,63 @@ public func NSLocalizedStringFromName(givenName : String?, familyName : String?)
     
     
 }
+
+public struct Contacts {
+    
+    public enum AuthorisationStatus {
+        case Authorised, Denied, Restricted
+    }
+    
+    public static func requestAccess(completion : (AuthorisationStatus -> Void)?) {
+        
+        if #available(iOS 9, *) {
+            switch CNContactStore.authorizationStatusForEntityType(.Contacts) {
+            case .NotDetermined:
+                CNContactStore().requestAccessForEntityType(.Contacts) { success, error in
+                    dispatch_async_main {
+                        if success {
+                            completion?(.Authorised)
+                        } else {
+                            completion?(.Denied)
+                        }
+                    }
+                }
+                break
+            case .Authorized:
+                dispatch_async_main { completion?(.Authorised) }
+                break
+            case .Denied:
+                dispatch_async_main { completion?(.Denied) }
+                break
+            case .Restricted:
+                dispatch_async_main { completion?(.Restricted) }
+                break
+            }
+        } else {
+            switch ABAddressBookGetAuthorizationStatus() {
+            case .NotDetermined:
+                ABAddressBookRequestAccessWithCompletion(ABAddressBookCreateWithOptions(nil, nil).takeRetainedValue()) { granted, error in
+                    dispatch_async_main {
+                        if granted {
+                            completion?(.Authorised)
+                        } else {
+                            completion?(.Denied)
+                        }
+                    }
+                }
+                break
+            case .Authorized:
+                dispatch_async_main { completion?(.Authorised) }
+                break
+            case .Denied:
+                dispatch_async_main { completion?(.Denied) }
+                break
+            case .Restricted:
+                dispatch_async_main { completion?(.Restricted) }
+                break
+            }
+            
+        }
+    }
+}
+
