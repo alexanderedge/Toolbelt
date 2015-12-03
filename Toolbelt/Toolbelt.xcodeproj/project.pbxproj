@@ -21,6 +21,7 @@
 		DE7D09AE1C108B180012A6FC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D09AC1C108B180012A6FC /* Async.swift */; };
 		DE7D09AF1C108B180012A6FC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D09AC1C108B180012A6FC /* Async.swift */; };
 		DE7D09B01C108B180012A6FC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D09AC1C108B180012A6FC /* Async.swift */; };
+		DE7D09B51C108EFF0012A6FC /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
 		DE7F07441AF5406A00B72E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7F07471AF5406A00B72E7C /* Localizable.strings */; };
 		DE7F07451AF5406A00B72E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7F07471AF5406A00B72E7C /* Localizable.strings */; };
 		DE7F07491AF5411900B72E7C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F07481AF5411900B72E7C /* Security.swift */; };
@@ -44,7 +45,6 @@
 		DEC1BDD01B99BC0C00C13455 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
 		DEC1BDD21B99BC0C00C13455 /* Filepath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C81AF513E800DCAD5B /* Filepath.swift */; };
 		DEC1BDD31B99BC0C00C13455 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A8271AF535B4004AE3D6 /* Validation.swift */; };
-		DEC1BDD41B99BC0C00C13455 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
 		DEC1BDD61B99BC0C00C13455 /* AVCaptureDevice+Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */; };
 		DEC1BDD71B99BC0C00C13455 /* AVURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3540C01AEE9CD800AC95FE /* AVURLAsset.swift */; };
 		DEC1BDD81B99BC0C00C13455 /* AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB50C61AF513A600DCAD5B /* AVPlayerItem.swift */; };
@@ -571,6 +571,7 @@
 				DEA28F3B1AEEB16E004DCD64 /* Toolbelt-iOSTests.swift in Sources */,
 				DE877BF71AFE352D00FAA33E /* ToolbeltTestsCommon.swift in Sources */,
 				DEC1BDC51B99B91A00C13455 /* DateTests.swift in Sources */,
+				DE7D09B51C108EFF0012A6FC /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +587,6 @@
 				DEC1BDD01B99BC0C00C13455 /* Application.swift in Sources */,
 				DEC1BDD21B99BC0C00C13455 /* Filepath.swift in Sources */,
 				DEC1BDD31B99BC0C00C13455 /* Validation.swift in Sources */,
-				DEC1BDD41B99BC0C00C13455 /* Contacts.swift in Sources */,
 				DEC1BDD61B99BC0C00C13455 /* AVCaptureDevice+Hardware.swift in Sources */,
 				DEC1BDD71B99BC0C00C13455 /* AVURLAsset.swift in Sources */,
 				DEC1BDD81B99BC0C00C13455 /* AVPlayerItem.swift in Sources */,
