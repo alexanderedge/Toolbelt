@@ -77,11 +77,6 @@
 		DE1AC5A71B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Authorisation.swift"; sourceTree = "<group>"; };
 		DE1AC5A81B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Hardware.swift"; sourceTree = "<group>"; };
 		DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
-		DE1E73F11BF55A5D00A2D280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CommonCrypto/Info.plist; sourceTree = "<group>"; };
-		DE1E73F21BF55AA600A2D280 /* iphoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = iphoneos.modulemap; path = CommonCrypto/iphoneos.modulemap; sourceTree = "<group>"; };
-		DE1E73F31BF55AA600A2D280 /* iphonesimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = iphonesimulator.modulemap; path = CommonCrypto/iphonesimulator.modulemap; sourceTree = "<group>"; };
-		DE1E73F41BF55AA600A2D280 /* macosx.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = macosx.modulemap; path = CommonCrypto/macosx.modulemap; sourceTree = "<group>"; };
-		DE28EC9A1BF50588008F4DF1 /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = CommonCrypto.xcconfig; path = CommonCrypto/CommonCrypto.xcconfig; sourceTree = "<group>"; };
 		DE28ECA81BF507C4008F4DF1 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile.private; path = ../Cartfile.private; sourceTree = "<group>"; };
 		DE28ECA91BF507C4008F4DF1 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile.resolved; path = ../Cartfile.resolved; sourceTree = "<group>"; };
 		DE292C121B8FBDC800ACCA02 /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
@@ -168,17 +163,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE1E73F01BF55A4A00A2D280 /* CommonCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				DE1E73F21BF55AA600A2D280 /* iphoneos.modulemap */,
-				DE1E73F31BF55AA600A2D280 /* iphonesimulator.modulemap */,
-				DE1E73F41BF55AA600A2D280 /* macosx.modulemap */,
-				DE1E73F11BF55A5D00A2D280 /* Info.plist */,
-			);
-			name = CommonCrypto;
-			sourceTree = "<group>";
-		};
 		DE35409A1AEE9C5700AC95FE = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +172,6 @@
 				DE3540CA1AEE9EA100AC95FE /* LICENSE */,
 				DE3540CB1AEE9EA100AC95FE /* README.md */,
 				DE877BFE1AFE3D3100FAA33E /* Configurations */,
-				DE1E73F01BF55A4A00A2D280 /* CommonCrypto */,
 				DE3540A61AEE9C5700AC95FE /* Toolbelt */,
 				DE877BF41AFE34E500FAA33E /* ToolbeltTests */,
 				DEA28F371AEEB16E004DCD64 /* Toolbelt_iOSTests */,
@@ -268,7 +251,6 @@
 				DE877BFF1AFE3D4500FAA33E /* Base */,
 				DE877C101AFE3D4500FAA33E /* iOS */,
 				DE877C151AFE3D4500FAA33E /* Mac OS X */,
-				DE28EC9A1BF50588008F4DF1 /* CommonCrypto.xcconfig */,
 			);
 			name = Configurations;
 			sourceTree = "<group>";
