@@ -28,26 +28,36 @@ import UIKit.UIAlertController
 
 extension UIAlertController {
     
-    public func addCancelButton(title : String = NSLocalizedString("Cancel", comment: "Cancels the current alert"), handler: ((UIAlertAction!) -> Void)?) {
+    public func addDefaultButton(title : String? = NSLocalizedString("OK", comment: ""), handler: ((UIAlertAction!) -> Void)?) {
+        self.addAction(UIAlertAction(title: title, style: .Default, handler: handler))
+    }
+    
+    public func addCancelButton(title : String? = NSLocalizedString("Cancel", comment: ""), handler: ((UIAlertAction!) -> Void)?) {
         self.addAction(UIAlertAction(title: title, style: .Cancel, handler: handler))
     }
     
-    public func addCancelButton() {
-        self.addCancelButton(handler: nil)
+    public func addDefaultButton() {
+        self.addDefaultButton(nil)
     }
     
-    public func addCancelButton(title : String) {
+    public func addDefaultButton(title : String?) {
+        self.addDefaultButton(title, handler: nil)
+    }
+    
+    public func addCancelButton() {
+        self.addCancelButton(nil)
+    }
+    
+    public func addCancelButton(title : String?) {
         self.addCancelButton(title, handler: nil)
     }
     
-    public convenience init(title : String, error : NSError) {
+    public convenience init(title : String = NSLocalizedString("Error", comment: ""), error : NSError) {
         self.init(title: title, message: error.localizedDescription, preferredStyle: .Alert)
-        self.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
     }
     
     public convenience init(title : String, message : String) {
         self.init(title: title, message: message, preferredStyle: .Alert)
-        self.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Default, handler: nil))
     }
     
 }
@@ -55,11 +65,15 @@ extension UIAlertController {
 extension UIViewController {
     
     public func showAlert(title : String, message : String) {
-        self.presentViewController(UIAlertController(title: title, message: message), animated: true, completion: nil)
+        let vc = UIAlertController(title: title, message: message)
+        vc.addDefaultButton()
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
     public func showAlert(title : String, error : NSError) {
-        self.presentViewController(UIAlertController(title: title, error: error), animated: true, completion: nil)
+        let vc = UIAlertController(title: title, error: error)
+        vc.addDefaultButton()
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
 }
