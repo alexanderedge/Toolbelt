@@ -28,27 +28,19 @@ import UIKit.UIAlertController
 
 extension UIAlertController {
     
-    public func addDefaultButton(title : String? = NSLocalizedString("OK", comment: ""), handler: ((UIAlertAction!) -> Void)?) {
+    public func addDefaultButton(title : String = NSLocalizedString("OK", comment: ""), handler: ((UIAlertAction!) -> Void)?) {
         self.addAction(UIAlertAction(title: title, style: .Default, handler: handler))
     }
     
-    public func addCancelButton(title : String? = NSLocalizedString("Cancel", comment: ""), handler: ((UIAlertAction!) -> Void)?) {
+    public func addCancelButton(title : String = NSLocalizedString("Cancel", comment: ""), handler: ((UIAlertAction!) -> Void)?) {
         self.addAction(UIAlertAction(title: title, style: .Cancel, handler: handler))
     }
     
-    public func addDefaultButton() {
-        self.addDefaultButton(nil)
-    }
-    
-    public func addDefaultButton(title : String?) {
+    public func addDefaultButton(title : String) {
         self.addDefaultButton(title, handler: nil)
     }
     
-    public func addCancelButton() {
-        self.addCancelButton(nil)
-    }
-    
-    public func addCancelButton(title : String?) {
+    public func addCancelButton(title : String) {
         self.addCancelButton(title, handler: nil)
     }
     
@@ -66,16 +58,14 @@ extension UIViewController {
     
     public func showAlert(title : String, message : String) {
         let vc = UIAlertController(title: title, message: message)
-        vc.addDefaultButton()
+        vc.addDefaultButton(handler: nil)
         self.presentViewController(vc, animated: true, completion: nil)
     }
     
     public func showAlert(title : String, error : NSError) {
         let vc = UIAlertController(title: title, error: error)
-        vc.addDefaultButton()
+        vc.addDefaultButton(handler: nil)
         self.presentViewController(vc, animated: true, completion: nil)
     }
     
 }
-
-
