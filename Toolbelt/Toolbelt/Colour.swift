@@ -59,4 +59,16 @@ extension Colour {
         self.init(hex : hex)
     }
     
+    public var hex : UInt32 {
+        var red : CGFloat = 0
+        var green : CGFloat = 0
+        var blue : CGFloat = 0
+        self.getRed(&red, green: &green, blue: &blue, alpha: nil)
+        return UInt32(red * 255) << 16 | UInt32(green * 255) << 8 | UInt32(blue * 255)
+    }
+    
+    public var hexString : String {
+        return NSString(format: "#%06x", self.hex) as String
+    }
+    
 }
