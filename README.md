@@ -3,6 +3,8 @@ Toolbelt is a collection of class extensions for iOS and OS X development writte
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
+[![Travis-CI](https://travis-ci.org/alexanderedge/Toolbelt.svg?branch=master)](https://travis-ci.org/alexanderedge/Toolbelt)
+
 # Requirements
 Toolbelt requires iOS 8.0 or OS X 10.10.
 
