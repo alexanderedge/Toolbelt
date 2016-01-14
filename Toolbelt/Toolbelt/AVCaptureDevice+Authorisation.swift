@@ -23,11 +23,11 @@ extension AVCaptureDevice {
         
         switch status {
         case .NotDetermined:
-                AVCaptureDevice.requestAccessForMediaType(type, completionHandler: { (granted : Bool) -> Void in
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                       completion?(granted)
-                    })
-                })
+            AVCaptureDevice.requestAccessForMediaType(type) { granted in
+                Queue.Main.execute {
+                    completion?(granted)
+                }
+            }
             break;
         case .Restricted, .Denied:
                 completion?(false);
