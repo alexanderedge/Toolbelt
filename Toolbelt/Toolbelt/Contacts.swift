@@ -46,7 +46,7 @@ public struct Contacts {
             switch CNContactStore.authorizationStatusForEntityType(.Contacts) {
             case .NotDetermined:
                 CNContactStore().requestAccessForEntityType(.Contacts) { success, error in
-                    dispatch_async_main {
+                    Queue.Main.execute {
                         if success {
                             completion?(.Authorised)
                         } else {
@@ -56,20 +56,20 @@ public struct Contacts {
                 }
                 break
             case .Authorized:
-                dispatch_async_main { completion?(.Authorised) }
+                Queue.Main.execute { completion?(.Authorised) }
                 break
             case .Denied:
-                dispatch_async_main { completion?(.Denied) }
+                Queue.Main.execute { completion?(.Denied) }
                 break
             case .Restricted:
-                dispatch_async_main { completion?(.Restricted) }
+                Queue.Main.execute { completion?(.Restricted) }
                 break
             }
         } else {
             switch ABAddressBookGetAuthorizationStatus() {
             case .NotDetermined:
                 ABAddressBookRequestAccessWithCompletion(ABAddressBookCreateWithOptions(nil, nil).takeRetainedValue()) { granted, error in
-                    dispatch_async_main {
+                    Queue.Main.execute {
                         if granted {
                             completion?(.Authorised)
                         } else {
@@ -79,13 +79,13 @@ public struct Contacts {
                 }
                 break
             case .Authorized:
-                dispatch_async_main { completion?(.Authorised) }
+                Queue.Main.execute { completion?(.Authorised) }
                 break
             case .Denied:
-                dispatch_async_main { completion?(.Denied) }
+                Queue.Main.execute { completion?(.Denied) }
                 break
             case .Restricted:
-                dispatch_async_main { completion?(.Restricted) }
+                Queue.Main.execute { completion?(.Restricted) }
                 break
             }
             

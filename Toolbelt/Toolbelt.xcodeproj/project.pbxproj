@@ -17,13 +17,11 @@
 		DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C7E1AF508640034B4F1 /* Alert.swift */; };
 		DE2F1C831AF509DA0034B4F1 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F1C821AF509DA0034B4F1 /* Application.swift */; };
 		DE4184261AF5003600C24ED3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
-		DE7D09AD1C108B180012A6FC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D09AC1C108B180012A6FC /* Async.swift */; };
-		DE7D09AE1C108B180012A6FC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D09AC1C108B180012A6FC /* Async.swift */; };
-		DE7D09AF1C108B180012A6FC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D09AC1C108B180012A6FC /* Async.swift */; };
-		DE7D09B01C108B180012A6FC /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D09AC1C108B180012A6FC /* Async.swift */; };
 		DE7D09B51C108EFF0012A6FC /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AC5B11B74C3D600CB6F53 /* Contacts.swift */; };
 		DE7F07441AF5406A00B72E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7F07471AF5406A00B72E7C /* Localizable.strings */; };
 		DE7F07451AF5406A00B72E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7F07471AF5406A00B72E7C /* Localizable.strings */; };
+		DE84FC891C481582003CC2B2 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE84FC881C481582003CC2B2 /* GCD.swift */; };
+		DE84FC8A1C4815D9003CC2B2 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE84FC881C481582003CC2B2 /* GCD.swift */; };
 		DE877BF71AFE352D00FAA33E /* ToolbeltTestsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */; };
 		DE877BF81AFE352F00FAA33E /* ToolbeltTestsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */; };
 		DE877BF91AFE388200FAA33E /* Toolbelt.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3540A91AEE9C5700AC95FE /* Toolbelt.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -91,8 +89,8 @@
 		DE3540CA1AEE9EA100AC95FE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE3540CB1AEE9EA100AC95FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DE4184251AF5003600C24ED3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		DE7D09AC1C108B180012A6FC /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		DE7F07461AF5406A00B72E7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DE84FC881C481582003CC2B2 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbeltTestsCommon.swift; sourceTree = "<group>"; };
 		DE877C001AFE3D4500FAA33E /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		DE877C021AFE3D4500FAA33E /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -193,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				DE3540A91AEE9C5700AC95FE /* Toolbelt.h */,
-				DE7D09AC1C108B180012A6FC /* Async.swift */,
+				DE84FC881C481582003CC2B2 /* GCD.swift */,
 				DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */,
 				DE292C121B8FBDC800ACCA02 /* Foundation.swift */,
 				DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */,
@@ -529,13 +527,13 @@
 				DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */,
 				DED5D60C1B987C7900C6304F /* UITableView.swift in Sources */,
 				DE292C181B8FC3C900ACCA02 /* UIScrollView.swift in Sources */,
+				DE84FC891C481582003CC2B2 /* GCD.swift in Sources */,
 				DE2F1C7A1AF505E70034B4F1 /* Geometry.swift in Sources */,
 				DE0B598B1B906EC800EF8FD3 /* UIGestureRecogniser.swift in Sources */,
 				DE1AC5B21B74C3D600CB6F53 /* Contacts.swift in Sources */,
 				DEFB50C41AF512D100DCAD5B /* ViewController.swift in Sources */,
 				DE4184261AF5003600C24ED3 /* Image.swift in Sources */,
 				DEB8A8281AF535B4004AE3D6 /* Validation.swift in Sources */,
-				DE7D09AD1C108B180012A6FC /* Async.swift in Sources */,
 				DE1AC5A91B74B34D00CB6F53 /* AVCaptureDevice+Authorisation.swift in Sources */,
 				DE292C131B8FBDC800ACCA02 /* Foundation.swift in Sources */,
 				DE1AC5AD1B74B34D00CB6F53 /* AVCaptureDevice+Hardware.swift in Sources */,
@@ -547,7 +545,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7D09AE1C108B180012A6FC /* Async.swift in Sources */,
 				DEA28F3B1AEEB16E004DCD64 /* Toolbelt-iOSTests.swift in Sources */,
 				DE877BF71AFE352D00FAA33E /* ToolbeltTestsCommon.swift in Sources */,
 				DEC1BDC51B99B91A00C13455 /* DateTests.swift in Sources */,
@@ -565,12 +562,12 @@
 				DEC1BDCD1B99BC0C00C13455 /* Image.swift in Sources */,
 				DEC1BDCE1B99BC0C00C13455 /* Geometry.swift in Sources */,
 				DEC1BDD01B99BC0C00C13455 /* Application.swift in Sources */,
+				DE84FC8A1C4815D9003CC2B2 /* GCD.swift in Sources */,
 				DEC1BDD21B99BC0C00C13455 /* Filepath.swift in Sources */,
 				DEC1BDD31B99BC0C00C13455 /* Validation.swift in Sources */,
 				DEC1BDD61B99BC0C00C13455 /* AVCaptureDevice+Hardware.swift in Sources */,
 				DEC1BDD71B99BC0C00C13455 /* AVURLAsset.swift in Sources */,
 				DEC1BDD81B99BC0C00C13455 /* AVPlayerItem.swift in Sources */,
-				DE7D09AF1C108B180012A6FC /* Async.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +575,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7D09B01C108B180012A6FC /* Async.swift in Sources */,
 				DEC1BDD91B99C9D800C13455 /* DateTests.swift in Sources */,
 				DEA28F591AEEB183004DCD64 /* Toolbelt-MacTests.swift in Sources */,
 				DE877BF81AFE352F00FAA33E /* ToolbeltTestsCommon.swift in Sources */,
