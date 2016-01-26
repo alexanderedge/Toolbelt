@@ -8,10 +8,6 @@
 
 import Foundation
 
-public func dispatch_after(delay : NSTimeInterval, block: dispatch_block_t) {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), block)
-}
-
 public enum Queue {
     case Main
     case UserInteractive
@@ -37,4 +33,9 @@ public enum Queue {
     public func execute(closure: () -> Void) {
         dispatch_async(self.queue, closure)
     }
+    
+    public func execute(after: NSTimeInterval, closure: () -> Void) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(after * Double(NSEC_PER_SEC))), self.queue, closure)
+    }
+    
 }
