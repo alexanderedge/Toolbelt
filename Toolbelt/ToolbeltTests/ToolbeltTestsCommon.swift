@@ -46,7 +46,13 @@ class ToolbeltTestsCommon: XCTestCase {
         XCTAssert(email.isValidEmail(), "email is valid")
         
     }
-        
+    
+    func testHexString () {
+        let bytes: [UInt8] = [0x1a,0x2b,0x3c,0x4d,0x5e]
+        let data = NSData(bytes: bytes, length: bytes.count)
+        XCTAssertEqual(data.hexadecimalString, "1a2b3c4d5e")
+    }
+    
     func testImageGeneration () {
         let image = Image.imageWithColour(Colour.redColor(), size: CGSizeMake(50, 50))
         XCTAssertNotNil(image, "image shouldn't be nil")
@@ -72,5 +78,6 @@ class ToolbeltTestsCommon: XCTestCase {
         print(colour.hexString)
         XCTAssertEqual(colour.hexString, "#00801e")
     }
+    
 }
 
