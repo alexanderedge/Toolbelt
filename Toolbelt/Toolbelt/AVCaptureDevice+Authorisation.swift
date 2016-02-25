@@ -10,17 +10,16 @@ import AVFoundation
 
 extension AVCaptureDevice {
     
-    public class func checkAuthorisationStatusForVideoCamera(completion : ((Bool) -> Void)?) {
-        self.checkAuthorisationStatusForMediaType(AVMediaTypeVideo, completion: completion)
+    public class func requestAuthorisationForVideoCamera(completion : ((Bool) -> Void)?) {
+        self.requestAuthorisationForMediaType(AVMediaTypeVideo, completion: completion)
     }
     
-    public class func checkAuthorisationStatusForMicrophone(completion : ((Bool) -> Void)?) {
-        self.checkAuthorisationStatusForMediaType(AVMediaTypeAudio, completion: completion)
+    public class func requestAuthorisationForMicrophone(completion : ((Bool) -> Void)?) {
+        self.requestAuthorisationForMediaType(AVMediaTypeAudio, completion: completion)
     }
      
-    public class func checkAuthorisationStatusForMediaType(type : String, completion : ((Bool) -> Void)?) {
+    public class func requestAuthorisationForMediaType(type : String, completion : ((Bool) -> Void)?) {
         let status = AVCaptureDevice.authorizationStatusForMediaType(type)
-        
         switch status {
         case .NotDetermined:
             AVCaptureDevice.requestAccessForMediaType(type) { granted in
