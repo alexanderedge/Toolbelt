@@ -50,10 +50,13 @@ extension Application {
     
     #if os(iOS)
     
-    public class var appSettingsURL : NSURL? {
-        return NSURL(string: UIApplicationOpenSettingsURLString)
+    public func openSettings() {
+        guard let url = NSURL(string: UIApplicationOpenSettingsURLString) else {
+            return
+        }
+        self.openURL(url)
     }
-    
+
     #endif
     
 }
