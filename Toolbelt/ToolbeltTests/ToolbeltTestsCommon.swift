@@ -49,12 +49,12 @@ class ToolbeltTestsCommon: XCTestCase {
     
     func testHexString () {
         let bytes: [UInt8] = [0x1a,0x2b,0x3c,0x4d,0x5e]
-        let data = NSData(bytes: bytes, length: bytes.count)
+        let data = NSData(bytes: UnsafePointer<UInt8>(bytes), length: bytes.count)
         XCTAssertEqual(data.hexadecimalString, "1a2b3c4d5e")
     }
     
     func testImageGeneration () {
-        let image = Image.imageWithColour(Colour.redColor(), size: CGSizeMake(50, 50))
+        let image = Image.imageWithColour(Colour.red, size: CGSize(width: 50, height: 50))
         XCTAssertNotNil(image, "image shouldn't be nil")
     }
 

@@ -28,45 +28,57 @@ import Foundation
 
 extension String {
     
-    public static func temporaryFilePathWithExtension(ext : String?) -> String {
+    public static func temporaryFilePathWithExtension(_ ext : String?) -> String {
         let tmpDir = NSTemporaryDirectory() as NSString
-        let file = tmpDir.stringByAppendingPathComponent(NSUUID().UUIDString)
+        let file = tmpDir.appendingPathComponent(UUID().uuidString)
         guard let ext = ext else {
             return file
         }
-        return (file as NSString).stringByAppendingPathExtension(ext)!
+        return file.stringByAppendingPathExtension(ext)!
     }
     
     public static func temporaryFilePath () -> String {
         return temporaryFilePathWithExtension(nil)
     }
     
-    public func stringByAppendingPathComponent(component : String) -> String {
-        return (self as NSString).stringByAppendingPathComponent(component) as String
+    public func stringByAppendingPathComponent(_ component : String) -> String {
+        return (self as NSString).appendingPathComponent(component) as String
     }
     
-    public func stringByAppendingPathExtension(ext : String) -> String? {
-        return (self as NSString).stringByAppendingPathExtension(ext)
+    public func stringByAppendingPathExtension(_ ext : String) -> String? {
+        return (self as NSString).appendingPathExtension(ext)
+    }
+    
+}
+
+extension URL {
+    
+    public static func temporaryFileURLWithExtension(_ ext : String?) -> URL {
+        return URL(fileURLWithPath: String.temporaryFilePathWithExtension(ext))
+    }
+    
+    public static func temporaryFileURL() -> URL {
+        return URL(fileURLWithPath: String.temporaryFilePath())
     }
     
 }
 
 extension NSURL {
     
-    public class func temporaryFileURLWithExtension(ext : String?) -> NSURL {
-        return NSURL(fileURLWithPath: String.temporaryFilePathWithExtension(ext))
+    public static func temporaryFileURLWithExtension(_ ext : String?) -> NSURL {
+        return URL.temporaryFileURLWithExtension(ext) as NSURL
     }
     
-    public class func temporaryFileURL() -> NSURL {
-        return NSURL(fileURLWithPath: String.temporaryFilePath())
+    public static func temporaryFileURL() -> NSURL {
+        return URL.temporaryFileURL() as NSURL
     }
     
 }
 
-extension NSFileManager {
+extension FileManager {
     
-    public func applicationDocumentsDirectory() -> NSURL {
-        return self.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).last as NSURL!
+    public func applicationDocumentsDirectory() -> URL {
+        return urls(for: .documentDirectory, in: .userDomainMask).last as URL!
     }
     
 }

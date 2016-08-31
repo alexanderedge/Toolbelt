@@ -28,7 +28,7 @@ import UIKit.UIViewController
 
 extension UIViewController {
     public func removeBackButtonTitle() {
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 }
 

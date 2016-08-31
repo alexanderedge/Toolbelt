@@ -9,16 +9,16 @@
 import Foundation
 
 extension Int {
-    public static func random(range: Range<Int> ) -> Int {
+    public static func random(_ range: Range<Int>) -> Int {
         var offset = 0
         
         // allow negative ranges
-        if range.startIndex < 0 {
-            offset = abs(range.startIndex)
+        if range.lowerBound < 0 {
+            offset = abs(range.lowerBound)
         }
         
-        let mini = UInt32(range.startIndex + offset)
-        let maxi = UInt32(range.endIndex + offset)
+        let mini = UInt32(range.lowerBound + offset)
+        let maxi = UInt32(range.upperBound + offset)
         
         return Int(mini + arc4random_uniform(maxi - mini)) - offset
     }
@@ -30,37 +30,34 @@ extension Bool {
     }
 }
 
-extension CollectionType {
-    public func shuffle() -> [Self.Generator.Element] {
-        return sort(){ lhs, rhs in
+extension Collection {
+    public func shuffled() -> [Self.Iterator.Element] {
+        return sorted(){ lhs, rhs in
             return Bool.random()
         }
     }
 }
 
-extension CollectionType where Self.Generator.Element : Equatable {
-    public func except(element : Self.Generator.Element) -> [Self.Generator.Element] {
+extension Collection where Self.Iterator.Element : Equatable {
+    public func except(_ element : Self.Iterator.Element) -> [Self.Iterator.Element] {
         return self.filter({ (obj) -> Bool in
             return obj != element
         })
     }
 }
 
-extension CollectionType where Index == Int, Self.Generator.Element : Equatable {
+extension Collection where Index == Int, Self.Iterator.Element : Equatable {
     
-    public func any(count : Int) -> [Self.Generator.Element] {
+    public func any(_ count : Int) -> [Self.Iterator.Element] {
         guard !self.isEmpty else {
             return []
         }
-        var indexes : [Int] = []
-        for idx in 0..<self.count {
-            indexes.append(idx)
-        }
-        indexes.shuffle()
-        return 0.stride(to: count, by: 1).map({return self[$0]})
+        let indexes = 0..<self.endIndex
+        let shuffledIndexes = indexes.shuffled()
+        return  stride(from: 0, to: count, by: 1).map({return self[shuffledIndexes[$0]]})
     }
     
-    public func anyExcept(element : Self.Generator.Element) -> Self.Generator.Element? {
+    public func anyExcept(_ element : Self.Iterator.Element) -> Self.Iterator.Element? {
         guard self.count >= 2 else {
             return nil
         }
@@ -71,25 +68,19 @@ extension CollectionType where Index == Int, Self.Generator.Element : Equatable 
         return newElement
     }
     
-    public var any: Self.Generator.Element? {
+    public var any: Self.Iterator.Element? {
         guard !self.isEmpty else {
             return nil
         }
-        return self[Int.random(0..<self.count)]
+        return self[Int.random(0..<self.endIndex)]
     }
     
 }
 
 extension Dictionary {
-    public mutating func merge<K, V>(dict: [K: V]){
+    public mutating func merge<K, V>(_ dict: [K: V]){
         for (k, v) in dict {
             self.updateValue(v as! Value, forKey: k as! Key)
         }
     }
-}
-
-extension NSDate : Comparable {}
-
-public func <(lhs : NSDate, rhs : NSDate) -> Bool {
-    return lhs.compare(rhs) == .OrderedAscending
 }

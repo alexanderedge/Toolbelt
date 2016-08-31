@@ -15,19 +15,20 @@ extension AVCaptureDevice {
     }
     
     public class func backCamera() -> AVCaptureDevice? {
-        return self.cameraWithPosition(.Back)
+        return self.cameraWithPosition(.back)
     }
     
     public class func frontCamera() -> AVCaptureDevice? {
-        return self.cameraWithPosition(.Front)
+        return self.cameraWithPosition(.front)
     }
     
-    public class func cameraWithPosition(position : AVCaptureDevicePosition) -> AVCaptureDevice? {
-        return AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo).filter({ return $0.position == position }).first as? AVCaptureDevice
+    public class func cameraWithPosition(_ position : AVCaptureDevicePosition) -> AVCaptureDevice? {
+        guard let devices = AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo) as? [AVCaptureDevice] else { return nil }
+        return devices.filter({ $0.position == position }).first
     }
     
     public class func microphone() -> AVCaptureDevice? {
-        return AVCaptureDevice.devicesWithMediaType(AVMediaTypeAudio).first as? AVCaptureDevice
+        return AVCaptureDevice.devices(withMediaType: AVMediaTypeAudio).first as? AVCaptureDevice
     }
     
 }

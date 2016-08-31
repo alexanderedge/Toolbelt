@@ -10,28 +10,28 @@ import AVFoundation
 
 extension AVCaptureDevice {
     
-    public class func requestAuthorisationForVideoCamera(completion : ((Bool) -> Void)?) {
+    public class func requestAuthorisationForVideoCamera(_ completion : ((Bool) -> Void)?) {
         self.requestAuthorisationForMediaType(AVMediaTypeVideo, completion: completion)
     }
     
-    public class func requestAuthorisationForMicrophone(completion : ((Bool) -> Void)?) {
+    public class func requestAuthorisationForMicrophone(_ completion : ((Bool) -> Void)?) {
         self.requestAuthorisationForMediaType(AVMediaTypeAudio, completion: completion)
     }
      
-    public class func requestAuthorisationForMediaType(type : String, completion : ((Bool) -> Void)?) {
-        let status = AVCaptureDevice.authorizationStatusForMediaType(type)
+    public class func requestAuthorisationForMediaType(_ type : String, completion : ((Bool) -> Void)?) {
+        let status = AVCaptureDevice.authorizationStatus(forMediaType: type)
         switch status {
-        case .NotDetermined:
-            AVCaptureDevice.requestAccessForMediaType(type) { granted in
-                Queue.Main.execute {
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(forMediaType: type) { granted in
+                DispatchQueue.main.async {
                     completion?(granted)
                 }
             }
             break;
-        case .Restricted, .Denied:
+        case .restricted, .denied:
                 completion?(false);
             break;
-        case .Authorized:
+        case .authorized:
                 completion?(true);
             break;
         }

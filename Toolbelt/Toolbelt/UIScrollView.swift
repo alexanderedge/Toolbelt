@@ -11,7 +11,7 @@ import UIKit
 extension UIScrollView {
     
     public var page : Int {
-        return Int(self.contentOffset.x / CGRectGetWidth(self.bounds))
+        return Int(self.contentOffset.x / self.bounds.width)
     }
     
 }

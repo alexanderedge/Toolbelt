@@ -19,8 +19,6 @@
 		DE4184261AF5003600C24ED3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4184251AF5003600C24ED3 /* Image.swift */; };
 		DE7F07441AF5406A00B72E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7F07471AF5406A00B72E7C /* Localizable.strings */; };
 		DE7F07451AF5406A00B72E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7F07471AF5406A00B72E7C /* Localizable.strings */; };
-		DE84FC8A1C4815D9003CC2B2 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE84FC881C481582003CC2B2 /* GCD.swift */; };
-		DE84FC8B1C4817D5003CC2B2 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE84FC881C481582003CC2B2 /* GCD.swift */; };
 		DE877BF71AFE352D00FAA33E /* ToolbeltTestsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */; };
 		DE877BF81AFE352F00FAA33E /* ToolbeltTestsCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */; };
 		DE877BF91AFE388200FAA33E /* Toolbelt.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3540A91AEE9C5700AC95FE /* Toolbelt.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,7 +87,6 @@
 		DE3540CB1AEE9EA100AC95FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DE4184251AF5003600C24ED3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		DE7F07461AF5406A00B72E7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DE84FC881C481582003CC2B2 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		DE877BF51AFE34FE00FAA33E /* ToolbeltTestsCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbeltTestsCommon.swift; sourceTree = "<group>"; };
 		DE877C001AFE3D4500FAA33E /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		DE877C021AFE3D4500FAA33E /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -190,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				DE3540A91AEE9C5700AC95FE /* Toolbelt.h */,
-				DE84FC881C481582003CC2B2 /* GCD.swift */,
 				DE0B598A1B906EC800EF8FD3 /* UIGestureRecogniser.swift */,
 				DE292C121B8FBDC800ACCA02 /* Foundation.swift */,
 				DE292C171B8FC3C900ACCA02 /* UIScrollView.swift */,
@@ -443,20 +439,27 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Alexander Edge";
 				TargetAttributes = {
 					DEA28F281AEEB16E004DCD64 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 					};
 					DEA28F321AEEB16E004DCD64 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DB5EHN928U;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					DEA28F461AEEB183004DCD64 = {
 						CreatedOnToolsVersion = 6.3.1;
+						ProvisioningStyle = Automatic;
 					};
 					DEA28F501AEEB183004DCD64 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DB5EHN928U;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -522,7 +525,6 @@
 				DE2F1C831AF509DA0034B4F1 /* Application.swift in Sources */,
 				DE8D69B61C17348700D4F45B /* Data.swift in Sources */,
 				DEA28F651AEEB195004DCD64 /* AVURLAsset.swift in Sources */,
-				DE84FC8B1C4817D5003CC2B2 /* GCD.swift in Sources */,
 				DEFB50C91AF513E800DCAD5B /* Filepath.swift in Sources */,
 				DE2F1C7F1AF508640034B4F1 /* Alert.swift in Sources */,
 				DED5D60C1B987C7900C6304F /* UITableView.swift in Sources */,
@@ -560,7 +562,6 @@
 				DEC1BDCD1B99BC0C00C13455 /* Image.swift in Sources */,
 				DEC1BDCE1B99BC0C00C13455 /* Geometry.swift in Sources */,
 				DEC1BDD01B99BC0C00C13455 /* Application.swift in Sources */,
-				DE84FC8A1C4815D9003CC2B2 /* GCD.swift in Sources */,
 				DEC1BDD21B99BC0C00C13455 /* Filepath.swift in Sources */,
 				DEC1BDD31B99BC0C00C13455 /* Validation.swift in Sources */,
 				DEC1BDD61B99BC0C00C13455 /* AVCaptureDevice+Hardware.swift in Sources */,
@@ -616,8 +617,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -639,6 +642,7 @@
 				PRODUCT_NAME = Toolbelt;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Toolbelt-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -654,8 +658,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -675,7 +681,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = Toolbelt;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Toolbelt-Swift.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -709,6 +716,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -739,6 +747,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -754,6 +763,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DB5EHN928U;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -770,6 +780,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Toolbelt-iOSTests";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -783,6 +794,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DB5EHN928U;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -797,6 +809,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.alexedge.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Toolbelt-iOSTests";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -811,6 +824,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -843,6 +857,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -871,8 +886,10 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DB5EHN928U;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -901,7 +918,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DB5EHN928U;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (

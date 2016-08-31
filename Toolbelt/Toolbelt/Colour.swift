@@ -34,7 +34,7 @@
 
 extension Colour {
     
-    private class func randomComponent() -> CGFloat {
+    fileprivate class func randomComponent() -> CGFloat {
         return CGFloat(arc4random_uniform(255)) / 255
     }
     
@@ -55,7 +55,7 @@ extension Colour {
     
     public convenience init(hexString : String) {
         var hex : UInt32 = 0
-        NSScanner(string: hexString.stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: "#"))).scanHexInt(&hex)
+        Scanner(string: hexString.trimmingCharacters(in: CharacterSet(charactersIn: "#"))).scanHexInt32(&hex)
         self.init(hex : hex)
     }
     

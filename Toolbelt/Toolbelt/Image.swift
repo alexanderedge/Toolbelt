@@ -57,15 +57,15 @@ import AVFoundation
     
     extension Image {
     
-        public class func imageWithColour(colour:Colour, size:CGSize) -> Image {
-            let rect = CGRect(origin: CGPointZero, size: size)
+        public class func imageWithColour(_ colour:Colour, size:CGSize) -> Image {
+            let rect = CGRect(origin: CGPoint.zero, size: size)
             UIGraphicsBeginImageContextWithOptions(size, false, 0)
-            let context = UIGraphicsGetCurrentContext();
+            let context = UIGraphicsGetCurrentContext()!
             colour.setFill()
-            CGContextFillRect(context, rect);
-            let image = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-            return image;
+            context.fill(rect)
+            let image = UIGraphicsGetImageFromCurrentImageContext()!
+            UIGraphicsEndImageContext()
+            return image
         }
     
     }
@@ -74,20 +74,20 @@ import AVFoundation
 
 extension Image {
     
-    public class func imageWithColour(colour:Colour) -> Image {
-        return imageWithColour(colour, size: CGSizeMake(1, 1))
+    public class func imageWithColour(_ colour:Colour) -> Image {
+        return imageWithColour(colour, size: CGSize(width: 1, height: 1))
     }
     
     
     #if os(iOS)
     
-    public func resizedImage(size : CGSize, contentMode : UIViewContentMode = .ScaleAspectFill) -> UIImage {
+    public func resizedImage(_ size : CGSize, contentMode : UIViewContentMode = .scaleAspectFill) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, true, 0)
         
-        var rect = CGRect(origin: CGPointZero, size: size)
+        var rect = CGRect(origin: CGPoint.zero, size: size)
         
         switch contentMode {
-        case .ScaleAspectFill:
+        case .scaleAspectFill:
             //rect = CGRect(origin: CGPointZero, size: size)
             
             let aspectRatio = self.size.width / self.size.height
@@ -102,24 +102,24 @@ extension Image {
             if newAspectRatio > aspectRatio {
                 // wider
                 let newHeight = size.width / aspectRatio
-                rect = CGRectInset(rect, 0, (size.height - newHeight) / 2)
+                rect = rect.insetBy(dx: 0, dy: (size.height - newHeight) / 2)
                 
             } else {
                 // new bounds is taller
                 let newWidth = size.height * aspectRatio
-                rect = CGRectInset(rect, (size.width - newWidth) / 2, 0)
+                rect = rect.insetBy(dx: (size.width - newWidth) / 2, dy: 0)
             }
             
             break
-        case .ScaleAspectFit:
-            rect = AVMakeRectWithAspectRatioInsideRect(self.size, rect)
+        case .scaleAspectFit:
+            rect = AVMakeRect(aspectRatio: self.size, insideRect: rect)
             break
         default:
             break
         }
         
-        self.drawInRect(rect)
-        let img = UIGraphicsGetImageFromCurrentImageContext()
+        self.draw(in: rect)
+        let img = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return img
     }

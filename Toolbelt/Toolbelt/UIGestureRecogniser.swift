@@ -11,8 +11,8 @@ import UIKit.UIGestureRecognizer
 extension UIGestureRecognizer {
     
     public func cancel() {
-        self.enabled = false
-        self.enabled = true
+        self.isEnabled = false
+        self.isEnabled = true
     }
     
 }

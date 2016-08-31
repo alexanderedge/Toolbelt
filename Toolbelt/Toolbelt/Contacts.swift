@@ -10,7 +10,7 @@ import Contacts // iOS 9
 import AddressBook // iOS 8
 
 @available(iOS 2.0, *)
-public func NSLocalizedStringFromName(givenName : String?, familyName : String?) -> String {
+public func NSLocalizedStringFromName(_ givenName : String?, familyName : String?) -> String {
     
     if #available(iOS 9.0, *) {
         let contact = CNMutableContact()
@@ -20,14 +20,14 @@ public func NSLocalizedStringFromName(givenName : String?, familyName : String?)
         if let name = familyName {
             contact.familyName = name
         }
-        return CNContactFormatter.stringFromContact(contact, style: .FullName)!
+        return CNContactFormatter.string(from: contact, style: .fullName)!
     } else {
         let record = ABPersonCreate().takeRetainedValue()
         if let name = givenName {
-            ABRecordSetValue(record, kABPersonFirstNameProperty, name, nil)
+            ABRecordSetValue(record, kABPersonFirstNameProperty, name as CFTypeRef!, nil)
         }
         if let name = familyName {
-            ABRecordSetValue(record, kABPersonLastNameProperty, name, nil)
+            ABRecordSetValue(record, kABPersonLastNameProperty, name as CFTypeRef!, nil)
         }
         return ABRecordCopyCompositeName(record).takeRetainedValue() as String
     }
@@ -37,55 +37,55 @@ public func NSLocalizedStringFromName(givenName : String?, familyName : String?)
 public struct Contacts {
     
     public enum AuthorisationStatus {
-        case Authorised, Denied, Restricted
+        case authorised, denied, restricted
     }
     
-    public static func requestAccess(completion : (AuthorisationStatus -> Void)?) {
+    public static func requestAccess(_ completion : ((AuthorisationStatus) -> Void)?) {
         
         if #available(iOS 9, *) {
-            switch CNContactStore.authorizationStatusForEntityType(.Contacts) {
-            case .NotDetermined:
-                CNContactStore().requestAccessForEntityType(.Contacts) { success, error in
-                    Queue.Main.execute {
+            switch CNContactStore.authorizationStatus(for: .contacts) {
+            case .notDetermined:
+                CNContactStore().requestAccess(for: .contacts) { success, error in
+                    DispatchQueue.main.async {
                         if success {
-                            completion?(.Authorised)
+                            completion?(.authorised)
                         } else {
-                            completion?(.Denied)
+                            completion?(.denied)
                         }
                     }
                 }
                 break
-            case .Authorized:
-                Queue.Main.execute { completion?(.Authorised) }
+            case .authorized:
+                DispatchQueue.main.async { completion?(.authorised) }
                 break
-            case .Denied:
-                Queue.Main.execute { completion?(.Denied) }
+            case .denied:
+                DispatchQueue.main.async { completion?(.denied) }
                 break
-            case .Restricted:
-                Queue.Main.execute { completion?(.Restricted) }
+            case .restricted:
+                DispatchQueue.main.async { completion?(.restricted) }
                 break
             }
         } else {
             switch ABAddressBookGetAuthorizationStatus() {
-            case .NotDetermined:
+            case .notDetermined:
                 ABAddressBookRequestAccessWithCompletion(ABAddressBookCreateWithOptions(nil, nil).takeRetainedValue()) { granted, error in
-                    Queue.Main.execute {
+                    DispatchQueue.main.async {
                         if granted {
-                            completion?(.Authorised)
+                            completion?(.authorised)
                         } else {
-                            completion?(.Denied)
+                            completion?(.denied)
                         }
                     }
                 }
                 break
-            case .Authorized:
-                Queue.Main.execute { completion?(.Authorised) }
+            case .authorized:
+                DispatchQueue.main.async { completion?(.authorised) }
                 break
-            case .Denied:
-                Queue.Main.execute { completion?(.Denied) }
+            case .denied:
+                DispatchQueue.main.async { completion?(.denied) }
                 break
-            case .Restricted:
-                Queue.Main.execute { completion?(.Restricted) }
+            case .restricted:
+                DispatchQueue.main.async { completion?(.restricted) }
                 break
             }
             

@@ -9,11 +9,11 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "67645708-D7F0-44D8-805D-755FEF6E18FD",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "FFE17537F7EEE54629FB922F97A29A67237B2746" : "Toolbelt",
-    "E084C86B03F81D63323C9E7510697EA528A758C7" : "ToolbeltCarthage\/Checkouts\/xcconfigs"
+    "FFE17537F7EEE54629FB922F97A29A67237B2746" : "Toolbelt\/",
+    "E084C86B03F81D63323C9E7510697EA528A758C7" : "Toolbelt\/Carthage\/Checkouts\/xcconfigs\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Toolbelt",
-  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Toolbelt\/Toolbelt.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {

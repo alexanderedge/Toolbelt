@@ -11,9 +11,22 @@ import Foundation
 extension NSData {
     
     public var hexadecimalString : String {
-        var bytes = [UInt8](count: self.length, repeatedValue: 0)
-        self.getBytes(&bytes, length: self.length)
-        return bytes.reduce(""){ return $0 + String(format:"%02x",$1)}
+        return (self as Data).hexadecimalString
     }
     
 }
+
+extension Data {
+    
+    public var hexadecimalString : String {
+        var str = ""
+        enumerateBytes { buffer, index, stop in
+            for byte in buffer {
+                str.append(String(format:"%02x",byte))
+            }
+        }
+        return str
+    }
+    
+}
+

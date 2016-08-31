@@ -38,9 +38,9 @@ extension Application {
     
     public var firstRun : Bool {
         let key = "uk.co.alexedge.toolbelt.first_run";
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if (defaults.boolForKey(key)) {
-            defaults.setBool(false, forKey: key)
+        let defaults = UserDefaults.standard
+        if (defaults.bool(forKey: key)) {
+            defaults.set(false, forKey: key)
             defaults.synchronize()
             return true
         } else {
@@ -51,7 +51,7 @@ extension Application {
     #if os(iOS)
     
     public func openSettings() {
-        guard let url = NSURL(string: UIApplicationOpenSettingsURLString) else {
+        guard let url = URL(string: UIApplicationOpenSettingsURLString) else {
             return
         }
         self.openURL(url)

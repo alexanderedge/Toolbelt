@@ -28,8 +28,8 @@ import AVFoundation
 
 extension AVURLAsset {
     
-    public class func posterImageFromAssetWithURL(url : NSURL!) throws -> Image {
-        return try AVURLAsset(URL: url, options: [AVURLAssetPreferPreciseDurationAndTimingKey : true]).posterImage()
+    public class func posterImageFromAssetWithURL(_ url : URL!) throws -> Image {
+        return try AVURLAsset(url: url, options: [AVURLAssetPreferPreciseDurationAndTimingKey : true]).posterImage()
     }
     
     public func posterImage() throws -> Image {
@@ -37,8 +37,8 @@ extension AVURLAsset {
         gen.appliesPreferredTrackTransform = true
         gen.requestedTimeToleranceBefore = kCMTimeZero
         gen.requestedTimeToleranceAfter = kCMTimeZero
-        let cgImage = try gen.copyCGImageAtTime(kCMTimeZero, actualTime: nil)
-        return Image(CGImage: cgImage);
+        let cgImage = try gen.copyCGImage(at: kCMTimeZero, actualTime: nil)
+        return Image(cgImage: cgImage);
     }
     
 }

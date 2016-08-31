@@ -10,13 +10,13 @@ import UIKit
 
 extension UITableView {
     
-    public var lastIndexPath : NSIndexPath {
+    public var lastIndexPath : IndexPath {
         let lastSection = self.lastSection
-        return NSIndexPath(forRow: self.lastRowInSection(lastSection), inSection: lastSection)
+        return IndexPath(row: self.lastRowInSection(lastSection), section: lastSection)
     }
     
-    public func lastRowInSection(section : Int) -> Int {
-        return self.numberOfRowsInSection(section) - 1
+    public func lastRowInSection(_ section : Int) -> Int {
+        return self.numberOfRows(inSection: section) - 1
     }
     
     public var lastSection : Int {

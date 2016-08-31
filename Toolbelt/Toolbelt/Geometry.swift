@@ -35,61 +35,61 @@ extension CGRect {
     }
     
     public var center : CGPoint {
-        return CGPointMake(CGRectGetMidX(self), CGRectGetMidY(self))
+        return CGPoint(x: self.midX, y: self.midY)
     }
     
     public var diagonal : CGFloat {
-        return sqrt(pow(CGRectGetWidth(self),2) + pow(CGRectGetHeight(self),2))
+        return sqrt(pow(self.width,2) + pow(self.height,2))
     }
 
 }
 
-public func CGRectMake(center : CGPoint, size : CGSize) -> CGRect {
+public func CGRectMake(_ center : CGPoint, size : CGSize) -> CGRect {
     return CGRect(center: center, size: size)
 }
 
-public func CGRectGetCenter(rect : CGRect) -> CGPoint {
+public func CGRectGetCenter(_ rect : CGRect) -> CGPoint {
     return rect.center
 }
 
-public func CGRectDiagonal(rect: CGRect) -> CGFloat {
+public func CGRectDiagonal(_ rect: CGRect) -> CGFloat {
     return rect.diagonal
 }
 
 // return rect2 that fits inside rect1, resizing and moving if necessary
-public func CGRectInsideRect(rect1 : CGRect, rect2 : CGRect) -> CGRect {
+public func CGRectInsideRect(_ rect1 : CGRect, rect2 : CGRect) -> CGRect {
 
-    let width = min(CGRectGetWidth(rect1), CGRectGetWidth(rect2));
-    let height = min(CGRectGetHeight(rect1), CGRectGetHeight(rect2));
-    var xPos = max(CGRectGetMinX(rect1), CGRectGetMinX(rect2));
-    var yPos = max(CGRectGetMinY(rect1), CGRectGetMinY(rect2));
+    let width = min(rect1.width, rect2.width);
+    let height = min(rect1.height, rect2.height);
+    var xPos = max(rect1.minX, rect2.minX);
+    var yPos = max(rect1.minY, rect2.minY);
     
     // check right
-    if ((xPos + width) > CGRectGetMaxX(rect1)) {
-        xPos = CGRectGetMaxX(rect1) - width;
+    if ((xPos + width) > rect1.maxX) {
+        xPos = rect1.maxX - width;
     }
     
     // check bottom
-    if ((yPos + height) > CGRectGetMaxY(rect1)) {
-        yPos = CGRectGetMaxY(rect1) - height;
+    if ((yPos + height) > rect1.maxY) {
+        yPos = rect1.maxY - height;
     }
     
-    return CGRectMake(xPos, yPos, width, height);
+    return CGRect(x: xPos, y: yPos, width: width, height: height);
 }
 
 protocol Scalable {
-    func scaleBy(scale : CGFloat) -> Self
+    func scaleBy(_ scale : CGFloat) -> Self
 }
 
 extension CGSize : Scalable {
     
-    func scaleBy(scale: CGFloat) -> CGSize {
+    func scaleBy(_ scale: CGFloat) -> CGSize {
         
         guard scale > 0 else {
             fatalError("negative scale factor encountered")
         }
         
-        return CGSizeMake(self.width * scale, self.height * scale)
+        return CGSize(width: self.width * scale, height: self.height * scale)
     }
     
 }

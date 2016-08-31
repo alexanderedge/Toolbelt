@@ -28,8 +28,8 @@ import Foundation
 
 extension String {
     
-    public func validateWithRegexPattern(regex : String) -> Bool {
-        return NSPredicate(format: "SELF MATCHES %@", argumentArray: [regex]).evaluateWithObject(self)
+    public func validateWithRegexPattern(_ regex : String) -> Bool {
+        return NSPredicate(format: "SELF MATCHES %@", argumentArray: [regex]).evaluate(with: self)
     }
 
     public func isValidEmail () -> Bool {
